@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public float throwXDir;
     private LineRenderer lineRenderer;
 
+	public Camera cam;
+
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -21,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 aimPos = Camera.main.WorldToScreenPoint(aim.transform.position);
+        Vector3 aimPos = cam.WorldToScreenPoint(aim.transform.position);
         throwXDir = (aimPos.x - Input.mousePosition.x) / 1000;
         throwYDir = (aimPos.y - Input.mousePosition.y) / 1000;
 
