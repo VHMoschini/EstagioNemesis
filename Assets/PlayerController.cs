@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour
 
     public void PlotTrajectory(Vector3 start, Vector3 startVelocity, float timestep, float maxTime)
     {
-        lineRenderer.positionCount = ((int)(maxTime / timestep));
 
         int index = 0;
 
@@ -58,8 +57,11 @@ public class PlayerController : MonoBehaviour
             float t = timestep * i;
             if (t > maxTime) break;
             Vector3 pos = PlotTrajectoryAtTime(start, startVelocity, t);
+            lineRenderer.positionCount = ((int)(maxTime / timestep));
+
             if (Physics.Linecast(prev, pos))
             {
+                lineRenderer.positionCount = index;
                 break;
             }
             else
