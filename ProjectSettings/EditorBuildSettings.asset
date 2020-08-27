@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: "Assets/Scenes/Sele\xE7\xE3oDeFase.unity"
+    guid: aa1d23dde1096f1449f03ad2845c4b9c
+  - enabled: 1
     path: Assets/Scenes/Mapa1.unity
     guid: 8f2bd681a9845da4b8cd34523ce7eea1
+  - enabled: 1
+    path: Assets/Scenes/Mapa2.unity
+    guid: c15ad8035e4672941a425586823a5eef
+  - enabled: 1
+    path: Assets/Scenes/Mapa3.unity
+    guid: 7d9b2cdbff9fe6e4c922e06f5b2885d1
   m_configObjects: {}
