@@ -9669,12 +9669,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000057425723
+      value: -0.000000050154146
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000011735267
+      value: 0.000000010249279
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -9704,12 +9704,12 @@ PrefabInstance:
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000028018619
+      value: -0.00000006250137
       objectReference: {fileID: 0}
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004672604
+      value: 0.00000001042322
       objectReference: {fileID: 0}
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -9825,6 +9825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Heading.m_Bias
       value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874333598806249751, guid: ff2b5487ef942994bb1164eb3168b71a,
+        type: 3}
+      propertyPath: m_XAxis.m_MaxSpeed
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -10407,23 +10412,3 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &2081708589 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1874333598806249744, guid: ff2b5487ef942994bb1164eb3168b71a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1573744401}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2081708590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081708589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 837522a34a1e06c4c8d9c4257d1d98a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TouchSensitivity_x: 10
-  TouchSensitivity_y: 10
