@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
 	public Camera cam;
 
+    public Slider heroBar;
+    public Slider mercenaryBar;
+
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -26,25 +30,6 @@ public class PlayerController : MonoBehaviour
         Vector3 aimPos = cam.WorldToScreenPoint(aim.transform.position);
         throwXDir = (aimPos.x - Input.mousePosition.x) / 1000;
         throwYDir = (aimPos.y - Input.mousePosition.y) / 1000;
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
-            bulletInst.GetComponent<Rigidbody>().isKinematic = true;
-        }
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            lineRenderer.positionCount = 0;
-            bulletInst.GetComponent<Rigidbody>().isKinematic = false;
-            bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
-
-        }
-
-        if (Input.GetButton("Fire1"))
-        {
-            PlotTrajectory(aim.transform.position + (Vector3.forward * 2), new Vector3(throwXDir, throwYDir, 1) * throwForce, 0.02f, 5f);
-        }
 
     }
 
@@ -87,4 +72,26 @@ public class PlayerController : MonoBehaviour
         projectile = _projectile;
     }
 
+    private void OnMouseDown()
+    {
+        bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
+        bulletInst.transform.SetParent(transform);
+        bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
+        bulletInst.GetComponent<CheckProjectileCollision>().mercenaryBar = mercenaryBar;
+        bulletInst.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
+    private void OnMouseUp()
+    {
+        lineRenderer.positionCount = 0;
+        bulletInst.transform.SetParent(null);
+        bulletInst.GetComponent<Rigidbody>().isKinematic = false;
+        bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
+    }
+
+    private void OnMouseDrag()
+    {
+        PlotTrajectory(aim.transform.position + (Vector3.forward * 2), new Vector3(throwXDir, throwYDir, 1) * throwForce, 0.02f, 5f);
+
+    }
 }

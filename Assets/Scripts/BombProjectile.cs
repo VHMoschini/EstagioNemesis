@@ -14,7 +14,7 @@ public class BombProjectile : MonoBehaviour
         {
             Instantiate(explosionEffects, transform.position, transform.rotation);
             GetComponent<SphereCollider>().enabled = true;
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 0.1f);
             hitted = true;
         }
     }
