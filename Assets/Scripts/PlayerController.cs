@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject projectile;
+    //public ObjectPooler objectPooler;
+    public int selectedBullet = 0;
+    public BulletsManager bulletsManager;
+    [HideInInspector]public GameObject projectile;
     public GameObject aim;
-    public GameObject bulletInst;
+    [HideInInspector]public GameObject bulletInst;
     public float throwForce;
     public float throwYDir;
     public float throwXDir;
@@ -75,28 +78,42 @@ public class PlayerController : MonoBehaviour
         projectile = _projectile;
     }
 
+    public void SetProjectileIndex( int _selectedBullet)
+    {
+        selectedBullet = _selectedBullet;
+    }
+
     private void OnMouseDown()
     {
 		shouldMoveCamera.Value = false;
-        bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
-        bulletInst.transform.SetParent(transform);
-        bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
-        bulletInst.GetComponent<CheckProjectileCollision>().mercenaryBar = mercenaryBar;
-        bulletInst.GetComponent<Rigidbody>().isKinematic = true;
+        if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
+        {
+            bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
+            bulletInst.transform.SetParent(transform);
+            bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
+            bulletInst.GetComponent<CheckProjectileCollision>().mercenaryBar = mercenaryBar;
+            bulletInst.GetComponent<Rigidbody>().isKinematic = true;
+        }
     }
 
     private void OnMouseUp()
     {
-        lineRenderer.positionCount = 0;
-        bulletInst.transform.SetParent(null);
-        bulletInst.GetComponent<Rigidbody>().isKinematic = false;
-        bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
-		shouldMoveCamera.Value = true;
-	}
+        if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
+        {
+            lineRenderer.positionCount = 0;
+            bulletInst.transform.SetParent(null);
+            bulletInst.GetComponent<Rigidbody>().isKinematic = false;
+            bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
+            shouldMoveCamera.Value = true;
+            bulletsManager.bullets[selectedBullet].currentBulletNum--;
+        }
+    }
 
     private void OnMouseDrag()
     {
-        PlotTrajectory(aim.transform.position + (Vector3.forward * 2), new Vector3(throwXDir, throwYDir, 1) * throwForce, 0.02f, 5f);
-
+        if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
+        {
+            PlotTrajectory(aim.transform.position + (Vector3.forward * 2), new Vector3(throwXDir, throwYDir, 1) * throwForce, 0.02f, 5f);
+        }
     }
 }

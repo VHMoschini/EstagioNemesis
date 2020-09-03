@@ -14,7 +14,6 @@ public class ObjectPooler : MonoBehaviour
 
     void Start()
     {
-        FillList();
         CreateObjects();
     }
 
@@ -25,17 +24,6 @@ public class ObjectPooler : MonoBehaviour
     }
 
 
-    private void FillList()
-    {
-        for (int i = 0; i < poolObjects.Length; i++)
-        {
-            for (int j = 0; j < poolObjects[i].amountToPool; j++)
-            {
-                poolObjects[i].pool.Add(poolObjects[i].objecToPool);
-            }
-        }
-    }
-
     private void CreateObjects()
     {
         for (int i = 0; i < poolObjects.Length; i++)
@@ -44,13 +32,14 @@ public class ObjectPooler : MonoBehaviour
             {
                 GameObject ObjInst = Instantiate(poolObjects[i].objecToPool);
                 ObjInst.gameObject.SetActive(false);
+                FillList(ObjInst, i);
             }
         }
     }
 
-    private void AddToList(int listIndex, GameObject objectInList)
+    private void FillList(GameObject _pooledObject, int listIndex)
     {
-
+        poolObjects[listIndex].pool.Add(_pooledObject);
     }
 }
 
@@ -60,7 +49,6 @@ public class PoolObject
 {
     public GameObject objecToPool;
     public int amountToPool;
-    [HideInInspector]
     public List<GameObject> pool = new List<GameObject>();
 
 

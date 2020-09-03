@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3956116239544295970}
   - component: {fileID: 4644678906590069675}
   - component: {fileID: 1353654062081542884}
+  - component: {fileID: 2068389323143288282}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -129,3 +130,15 @@ MonoBehaviour:
   mercenaryBar: {fileID: 0}
   SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
     type: 3}
+--- !u!114 &2068389323143288282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8771839364320873925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737abfb611a07f04b9ee4262ded053cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
