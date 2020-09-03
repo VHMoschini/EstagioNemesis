@@ -314,6 +314,7 @@ MonoBehaviour:
   TouchSensitivity_x: 0.1
   TouchSensitivity_y: 0.1
   speed: 75
+  shouldMove: {fileID: 11400000, guid: b747e293565940741aad89639972a97b, type: 2}
 --- !u!1 &1874333599280360179
 GameObject:
   m_ObjectHideFlags: 0

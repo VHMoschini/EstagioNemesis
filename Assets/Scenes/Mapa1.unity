@@ -11593,12 +11593,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5972639142830015091, guid: 84b9bc39a6beca34bbd1c1d2dac22fe7,
         type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 8771839364320873925, guid: 81973005fada7ae4599da82a66c7ed08,
-        type: 3}
-    - target: {fileID: 5972639142830015091, guid: 84b9bc39a6beca34bbd1c1d2dac22fe7,
-        type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 1031290178}
@@ -12554,22 +12548,22 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.20021759
+      value: -0.2002176
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000042826294
+      value: -0.0000000509976
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000008751789
+      value: 0.00000001042164
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.97975147
+      value: -0.9797515
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}

@@ -9,6 +9,8 @@ public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
 	public float TouchSensitivity_y;
 	private CinemachineFreeLook cmFL;
 	public float speed;
+
+	public BoolVariable shouldMove;
 	
 	void Start()
 	{
@@ -19,7 +21,7 @@ public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetMouseButton(0))
+		if (Input.GetMouseButton(0) && shouldMove.Value)
 		{
 			cmFL.m_XAxis.m_MaxSpeed = speed;
 		}

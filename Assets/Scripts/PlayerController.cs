@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     public float throwXDir;
     private LineRenderer lineRenderer;
 
+	public BoolVariable shouldMoveCamera;
+
 	public Camera cam;
 
     public Slider heroBar;
@@ -22,7 +24,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
-    }
+		shouldMoveCamera.Value = true;
+	}
 
     // Update is called once per frame
     void Update()
@@ -74,6 +77,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMouseDown()
     {
+		shouldMoveCamera.Value = false;
         bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
         bulletInst.transform.SetParent(transform);
         bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
@@ -87,7 +91,8 @@ public class PlayerController : MonoBehaviour
         bulletInst.transform.SetParent(null);
         bulletInst.GetComponent<Rigidbody>().isKinematic = false;
         bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
-    }
+		shouldMoveCamera.Value = true;
+	}
 
     private void OnMouseDrag()
     {
