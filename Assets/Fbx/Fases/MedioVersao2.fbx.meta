@@ -3,7 +3,32 @@ guid: c518298768f882543be6aa6db9edab33
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Madeira
+    second: {fileID: 2100000, guid: b6442cfc3121d2e49b82cf33a12209f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ferro
+    second: {fileID: 2100000, guid: 515ee810baa75054589609bf5a3170a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: madeira
+    second: {fileID: 2100000, guid: 515ee810baa75054589609bf5a3170a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pedra
+    second: {fileID: 2100000, guid: 966dcc3ad3ac17e42b4bda8bed6d4c66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pedra1
+    second: {fileID: 2100000, guid: 966dcc3ad3ac17e42b4bda8bed6d4c66, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
