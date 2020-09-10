@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
 		shouldMoveCamera.Value = false;
         if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
-            bulletInst = Instantiate(projectile, aim.transform.position + (Vector3.forward * 2), transform.rotation);
+            bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
             bulletInst.transform.SetParent(transform);
             bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
             bulletInst.GetComponent<CheckProjectileCollision>().mercenaryBar = mercenaryBar;
