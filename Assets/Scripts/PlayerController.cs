@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
     //public ObjectPooler objectPooler;
     public int selectedBullet = 0;
     public BulletsManager bulletsManager;
@@ -29,8 +28,8 @@ public class PlayerController : MonoBehaviour
         lineRenderer = GetComponent<LineRenderer>();
 		shouldMoveCamera.Value = true;
 	}
+	
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 aimPos = cam.WorldToScreenPoint(aim.transform.position);
@@ -103,7 +102,7 @@ public class PlayerController : MonoBehaviour
             lineRenderer.positionCount = 0;
             bulletInst.transform.SetParent(null);
             bulletInst.GetComponent<Rigidbody>().isKinematic = false;
-            bulletInst.GetComponent<Rigidbody>().AddForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
+            bulletInst.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
             shouldMoveCamera.Value = true;
             bulletsManager.bullets[selectedBullet].currentBulletNum--;
         }
@@ -113,7 +112,7 @@ public class PlayerController : MonoBehaviour
     {
         if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
-            PlotTrajectory(aim.transform.position + (Vector3.forward * 2), new Vector3(throwXDir, throwYDir, 1) * throwForce, 0.02f, 5f);
+            PlotTrajectory(aim.transform.position + (transform.forward * 2), (transform.rotation * new Vector3(throwXDir, throwYDir, 1)) * throwForce, 0.02f, 5f);
         }
     }
 }
