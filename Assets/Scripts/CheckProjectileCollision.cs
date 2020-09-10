@@ -1,12 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CheckProjectileCollision : MonoBehaviour
 {
-    [HideInInspector]public Slider heroBar;
-    [HideInInspector]public Slider mercenaryBar;
+    public BarsManager barsManager;
 
 	public GameObject SplashWoodParticle;
 
@@ -14,11 +12,12 @@ public class CheckProjectileCollision : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<EnemyCube>())
         {
-            heroBar.value++;
-			Instantiate(SplashWoodParticle, collision.transform.position, collision.transform.rotation);
+            barsManager.hittedEnemieCubes++;
+
+            Instantiate(SplashWoodParticle, collision.transform.position, collision.transform.rotation);
         } else if (collision.gameObject.GetComponent<AllyCube>())
         {
-            mercenaryBar.value++;
+            barsManager.hittedAllyCubes++;
         }
     }
 }

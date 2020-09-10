@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,8 +19,7 @@ public class PlayerController : MonoBehaviour
 
 	public Camera cam;
 
-    public Slider heroBar;
-    public Slider mercenaryBar;
+    public BarsManager barsManager;
 
     void Start()
     {
@@ -89,8 +87,7 @@ public class PlayerController : MonoBehaviour
         {
             bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
             bulletInst.transform.SetParent(transform);
-            bulletInst.GetComponent<CheckProjectileCollision>().heroBar = heroBar;
-            bulletInst.GetComponent<CheckProjectileCollision>().mercenaryBar = mercenaryBar;
+            bulletInst.GetComponent<CheckProjectileCollision>().barsManager = barsManager;
             bulletInst.GetComponent<Rigidbody>().isKinematic = true;
         }
     }
