@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5972639141631056352}
   - component: {fileID: 7375158251031954855}
   m_Layer: 0
-  m_Name: player
+  m_Name: playerBranco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1508a7f8e6c4d4342bdfb5660de31c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedBullet: 0
+  bulletsManager: {fileID: 0}
   projectile: {fileID: 8771839364320873925, guid: 81973005fada7ae4599da82a66c7ed08,
     type: 3}
   aim: {fileID: 5972639142939190322}
@@ -165,8 +167,7 @@ MonoBehaviour:
   throwXDir: 0
   shouldMoveCamera: {fileID: 11400000, guid: b747e293565940741aad89639972a97b, type: 2}
   cam: {fileID: 0}
-  heroBar: {fileID: 0}
-  mercenaryBar: {fileID: 0}
+  barsManager: {fileID: 0}
 --- !u!120 &5972639142830015103
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TelaInicial.unity
+    guid: 1fe6d980d3c9ac74ba654ae8d2861c69
+  - enabled: 1
+    path: Assets/Scenes/SelecaoDePersonagem.unity
+    guid: eb9ce0de41c1b3343a94aca3663c6bdc
+  - enabled: 1
     path: "Assets/Scenes/Sele\xE7\xE3oDeFase.unity"
     guid: aa1d23dde1096f1449f03ad2845c4b9c
   - enabled: 1
