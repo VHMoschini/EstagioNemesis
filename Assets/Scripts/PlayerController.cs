@@ -69,17 +69,6 @@ public class PlayerController : MonoBehaviour
         return start + startVelocity * time + Physics.gravity * time * time * 0.5f;
     }
 
-
-    public void SetProjectile(GameObject _projectile)
-    {
-        projectile = _projectile;
-    }
-
-    public void SetProjectileIndex( int _selectedBullet)
-    {
-        selectedBullet = _selectedBullet;
-    }
-
     private void OnMouseDown()
     {
 		shouldMoveCamera.Value = false;
@@ -87,7 +76,10 @@ public class PlayerController : MonoBehaviour
         {
             bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
             bulletInst.transform.SetParent(transform);
+            if(bulletInst.GetComponent<CheckProjectileCollision>())
             bulletInst.GetComponent<CheckProjectileCollision>().barsManager = barsManager;
+            if(bulletInst.GetComponent<LaserBulletScript>())
+                bulletInst.GetComponent<LaserBulletScript>().barsManager = barsManager;
             bulletInst.GetComponent<Rigidbody>().isKinematic = true;
         }
     }

@@ -8,9 +8,7 @@ public class BarsManager : MonoBehaviour
     // Start is called before the first frame update
     public Slider heroBar;
     public Slider mercenaryBar;
-    public int totalEnemiesCubes;
     public int hittedEnemieCubes;
-    public int totalAllyCubes;
     public int hittedAllyCubes;
 
 
@@ -23,6 +21,8 @@ public class BarsManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        heroBar.value = totalEnemiesCubes - (totalEnemiesCubes - hittedEnemieCubes);
+        heroBar.value = hittedEnemieCubes * 0.4975f;
+        mercenaryBar.value = hittedAllyCubes * 2.56f;
+
     }
 }

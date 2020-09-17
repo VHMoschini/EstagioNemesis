@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5972639141631056352}
-  - component: {fileID: 7375158251031954855}
   m_Layer: 0
   m_Name: playerBranco
   m_TagString: Untagged
