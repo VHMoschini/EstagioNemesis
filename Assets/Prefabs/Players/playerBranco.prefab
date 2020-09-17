@@ -47,6 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   follow: 1
+  shouldMoveCam: {fileID: 11400000, guid: b747e293565940741aad89639972a97b, type: 2}
+  TouchDistanceDelta: {fileID: 11400000, guid: e8d47a5a7fa20f649a2da7fec9c3b429, type: 2}
 --- !u!1 &5972639142830015093
 GameObject:
   m_ObjectHideFlags: 0

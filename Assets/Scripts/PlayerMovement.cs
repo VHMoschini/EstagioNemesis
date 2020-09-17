@@ -9,6 +9,14 @@ public class PlayerMovement : MonoBehaviour
 
 	private Vector3 startingPos;
 
+	public BoolVariable shouldMoveCam;
+	public FloatVariable TouchDistanceDelta;
+
+
+	
+
+	
+
 	private void Start()
 	{
 		transform.parent = cam.transform;
@@ -28,6 +36,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 			transform.parent = null;
 		}
+
+
+
+
+		
+		
 	}
 
 }

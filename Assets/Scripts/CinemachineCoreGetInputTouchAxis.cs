@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using Cinemachine;
 
 public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
@@ -11,7 +13,18 @@ public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
 	public float speed;
 
 	public BoolVariable shouldMove;
-	
+	public float touchDistanceDelta;
+
+
+	private float dist;
+	private float oldDist;
+
+	private Vector2 basePosition;
+	private Touch[] touchesCount;
+
+	private bool antiSnap;
+
+
 	void Start()
 	{
 		CinemachineCore.GetInputAxis = HandleAxisInputDelegate;
@@ -23,12 +36,43 @@ public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
 	{
 		if (Input.GetMouseButton(0) && shouldMove.Value)
 		{
-			cmFL.m_XAxis.m_MaxSpeed = speed;
+			if (Input.touchCount > 1)
+			{
+				
+				basePosition = new Vector2(0, 0);
+
+
+
+				dist = Vector2.Distance(Input.GetTouch(0).position, Input.GetTouch(1).position);
+				touchDistanceDelta = dist - oldDist;
+
+				if (!antiSnap)
+				{
+					Zoom(touchDistanceDelta / 15);
+				}
+				antiSnap = false;
+				
+
+				oldDist = dist;
+			}
+			else
+			{
+				cmFL.m_XAxis.m_MaxSpeed = speed;
+				antiSnap = true;
+			}
 		}
 		else
 		{
 			cmFL.m_XAxis.m_MaxSpeed = 0;
+			antiSnap = true;
 		}
+	}
+
+	void Zoom(float increment)
+	{
+		cmFL.m_Orbits[1].m_Height = Mathf.Clamp(cmFL.m_Orbits[1].m_Height - increment, 20, 30);
+		cmFL.m_Orbits[1].m_Radius = Mathf.Clamp(cmFL.m_Orbits[1].m_Radius - increment, 40, 70);
+
 	}
 
 	float HandleAxisInputDelegate(string axisName)
