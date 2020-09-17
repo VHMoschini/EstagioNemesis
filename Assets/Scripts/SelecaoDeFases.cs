@@ -10,4 +10,10 @@ public class SelecaoDeFases : MonoBehaviour
         SceneManager.LoadScene(numero);
 
     }
+
+    public void Reload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
 }
