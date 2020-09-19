@@ -8,13 +8,6 @@ public class PlayerMovement : MonoBehaviour
 	public bool follow;
 
 	private Vector3 startingPos;
-
-	public BoolVariable shouldMoveCam;
-	public FloatVariable TouchDistanceDelta;
-
-
-	
-
 	
 
 	private void Start()
@@ -35,12 +28,7 @@ public class PlayerMovement : MonoBehaviour
 		else
 		{
 			transform.parent = null;
-		}
-
-
-
-
-		
+		}	
 		
 	}
 

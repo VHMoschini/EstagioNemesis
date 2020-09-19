@@ -10,11 +10,12 @@ public class EnemyCube : MonoBehaviour
 
 
 	public float timerToDie;
-	public GameObject lixo;
+	public GameObject debris;
 	
     void Start()
     {
 		startingPos = transform.position;
+		debris = Resources.Load<GameObject>("Debris");
     }
 	
     void Update()
@@ -53,7 +54,7 @@ public class EnemyCube : MonoBehaviour
 		yield return new WaitForSeconds(timerToDie);
 		if (isGrounded)
 		{
-			Instantiate(lixo, new Vector3(transform.position.x, hitPos, transform.position.z), Quaternion.identity, null);
+			Instantiate(debris, new Vector3(transform.position.x, hitPos, transform.position.z), Quaternion.identity, null);
 			Destroy(gameObject);
 		}
 	}
