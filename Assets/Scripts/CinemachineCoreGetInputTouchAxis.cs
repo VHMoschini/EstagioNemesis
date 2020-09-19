@@ -70,8 +70,8 @@ public class CinemachineCoreGetInputTouchAxis : MonoBehaviour
 
 	void Zoom(float increment)
 	{
-		cmFL.m_Orbits[1].m_Height = Mathf.Clamp(cmFL.m_Orbits[1].m_Height - increment, 20, 30);
-		cmFL.m_Orbits[1].m_Radius = Mathf.Clamp(cmFL.m_Orbits[1].m_Radius - increment, 40, 70);
+		cmFL.m_Orbits[1].m_Height = Mathf.Clamp(cmFL.m_Orbits[1].m_Height - increment, 25, 35);
+		cmFL.m_Orbits[1].m_Radius = Mathf.Clamp(cmFL.m_Orbits[1].m_Radius - increment, 50, 70);
 
 	}
 
