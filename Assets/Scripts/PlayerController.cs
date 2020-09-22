@@ -19,8 +19,6 @@ public class PlayerController : MonoBehaviour
 
 	public Camera cam;
 
-    public BarsManager barsManager;
-
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -76,10 +74,6 @@ public class PlayerController : MonoBehaviour
         {
             bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
             bulletInst.transform.SetParent(transform);
-            if(bulletInst.GetComponent<CheckProjectileCollision>())
-            bulletInst.GetComponent<CheckProjectileCollision>().barsManager = barsManager;
-            if(bulletInst.GetComponent<LaserBulletScript>())
-                bulletInst.GetComponent<LaserBulletScript>().barsManager = barsManager;
             bulletInst.GetComponent<Rigidbody>().isKinematic = true;
         }
     }

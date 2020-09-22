@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyCube : MonoBehaviour
 {
 	private bool isGrounded;
-	private bool wasHit;
+	//private bool wasHit;
 	private Vector3 startingPos;
 
 
@@ -18,12 +18,6 @@ public class EnemyCube : MonoBehaviour
 		debris = Resources.Load<GameObject>("Debris");
     }
 	
-    void Update()
-    {
-        
-    }
-
-
 
 	private void OnCollisionEnter(Collision collision)
 	{
@@ -33,10 +27,10 @@ public class EnemyCube : MonoBehaviour
 			isGrounded = true;
 			StartCoroutine(TurnToRubble(collision.GetContact(0).point.y));
 		}
-		else if (collision.collider.CompareTag("Bullet"))
-		{
-			wasHit = true;
-		}
+		//else if (collision.collider.CompareTag("Bullet"))
+		//{
+		//	wasHit = true;
+		//}
 
 	}
 
@@ -54,6 +48,7 @@ public class EnemyCube : MonoBehaviour
 		yield return new WaitForSeconds(timerToDie);
 		if (isGrounded)
 		{
+            GetComponentInParent<BarsManager>().hittedEnemieCubes++;
 			Instantiate(debris, new Vector3(transform.position.x, hitPos, transform.position.z), Quaternion.identity, null);
 			Destroy(gameObject);
 		}

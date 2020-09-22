@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class AllyCube : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool isGrounded;
+    private Vector3 startingPos;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        startingPos = transform.position;
+
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (Vector3.Distance(startingPos, transform.position) > 1 && collision.collider.CompareTag("Ground"))
+        {
+            GetComponentInParent<BarsManager>().hittedAllyCubes++;
+            isGrounded = true;
+        }
+
     }
 }

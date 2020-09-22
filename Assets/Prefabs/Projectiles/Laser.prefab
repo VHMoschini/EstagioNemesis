@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 788776185862673992}
   m_Layer: 0
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,6 @@ MonoBehaviour:
   - {fileID: 788776186647216374}
   - {fileID: 788776186717063859}
   - {fileID: 788776187647809861}
-  barsManager: {fileID: 0}
 --- !u!1 &788776186647216374
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +62,6 @@ GameObject:
   - component: {fileID: 788776186647216373}
   - component: {fileID: 788776186647216372}
   - component: {fileID: 788776186647216375}
-  - component: {fileID: 2357073092661366827}
   - component: {fileID: 3442438836003961008}
   m_Layer: 0
   m_Name: Cylinder
@@ -149,19 +147,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &2357073092661366827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788776186647216374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a026c5f3372064bb2aef25c8a83724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barsManager: {fileID: 0}
 --- !u!54 &3442438836003961008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -190,7 +175,6 @@ GameObject:
   - component: {fileID: 788776186717063854}
   - component: {fileID: 788776186717063857}
   - component: {fileID: 788776186717063856}
-  - component: {fileID: 1860017655694249592}
   - component: {fileID: 3133944220226945530}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -276,19 +260,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1860017655694249592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788776186717063859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a026c5f3372064bb2aef25c8a83724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barsManager: {fileID: 0}
 --- !u!54 &3133944220226945530
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,7 +288,6 @@ GameObject:
   - component: {fileID: 788776187647809856}
   - component: {fileID: 788776187647809859}
   - component: {fileID: 788776187647809858}
-  - component: {fileID: 7759989815884986314}
   - component: {fileID: 8664595815180003251}
   m_Layer: 0
   m_Name: Cylinder (2)
@@ -403,19 +373,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7759989815884986314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788776187647809861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a026c5f3372064bb2aef25c8a83724, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  barsManager: {fileID: 0}
 --- !u!54 &8664595815180003251
 Rigidbody:
   m_ObjectHideFlags: 0

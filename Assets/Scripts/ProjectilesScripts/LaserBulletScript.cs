@@ -5,12 +5,15 @@ using UnityEngine;
 public class LaserBulletScript : MonoBehaviour
 {
     public GameObject laser;
-    public BarsManager barsManager;
+    private bool hitted;
 
     private void OnTriggerEnter(Collider other)
     {
-        GameObject LaserInst = Instantiate(laser, transform.position, transform.rotation);
-        LaserInst.GetComponent<LaserScript>().barsManager = barsManager;
+        if (!hitted)
+        {
+            GameObject LaserInst = Instantiate(laser, transform.position, transform.rotation);
+            hitted = true;
+        }
         Destroy(gameObject);
     }
 }

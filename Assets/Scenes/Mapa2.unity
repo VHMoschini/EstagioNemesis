@@ -146,7 +146,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101260647}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -391,7 +391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1031290175
 GameObject:
@@ -504,7 +504,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031290175}
-  m_LocalRotation: {x: 0.19305676, y: -0.00000005946746, z: 0.000000011700715, w: 0.9811876}
+  m_LocalRotation: {x: 0.19305676, y: -0.000000059766776, z: 0.000000011759607, w: 0.9811876}
   m_LocalPosition: {x: 0.000005254983, y: 27.2, z: -60.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -616,17 +616,17 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.20021766
+      value: 0.2108721
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000004282629
+      value: -0.000000018027901
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000008751791
+      value: 0.000000003889031
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -656,12 +656,12 @@ PrefabInstance:
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000028018619
+      value: -0.0000000430351
       objectReference: {fileID: 0}
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004672604
+      value: 0.000000007659319
       objectReference: {fileID: 0}
     - target: {fileID: 1874333598200492988, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -761,12 +761,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000050704074
+      value: -0.00000005132045
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000009976444
+      value: 0.000000010097721
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -887,37 +887,37 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 2114554949}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.25
+      value: -251.86964
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: -277.58954
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 78.086105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
@@ -927,7 +927,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d08c30193b133047ba9e7f912a6f481,
         type: 3}
@@ -4086,7 +4086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4129,7 +4129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863229
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4172,7 +4172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863232
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4215,7 +4215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4258,7 +4258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863238
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4301,7 +4301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4344,7 +4344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863244
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4387,7 +4387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4430,7 +4430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4473,7 +4473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4516,7 +4516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4559,7 +4559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4602,7 +4602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4688,7 +4688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4731,7 +4731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4774,7 +4774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4817,7 +4817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4860,7 +4860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4903,7 +4903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4946,7 +4946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4989,7 +4989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5032,7 +5032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5075,7 +5075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5118,7 +5118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863298
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5161,7 +5161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5204,7 +5204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863304
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5247,7 +5247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863307
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5290,7 +5290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5333,7 +5333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5376,7 +5376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5419,7 +5419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5462,7 +5462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5505,7 +5505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5548,7 +5548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5591,7 +5591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5634,7 +5634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863334
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5677,7 +5677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5720,7 +5720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863340
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5763,7 +5763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5806,7 +5806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5849,7 +5849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863349
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5892,7 +5892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5935,7 +5935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5978,7 +5978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6021,7 +6021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863361
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6064,7 +6064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863364
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6107,7 +6107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6150,7 +6150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863370
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6193,7 +6193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6236,7 +6236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6279,7 +6279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6322,7 +6322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863382
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6365,7 +6365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863385
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6408,7 +6408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6451,7 +6451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6494,7 +6494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6537,7 +6537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863397
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6580,7 +6580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863400
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6623,7 +6623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863403
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6666,7 +6666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6709,7 +6709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6752,7 +6752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6795,7 +6795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863415
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6838,7 +6838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6881,7 +6881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6924,7 +6924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863424
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6967,7 +6967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7010,7 +7010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7053,7 +7053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7096,7 +7096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7139,7 +7139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7182,7 +7182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7225,7 +7225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863445
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7268,7 +7268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7311,7 +7311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7354,7 +7354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7397,7 +7397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7440,7 +7440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863460
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7483,7 +7483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863463
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7526,7 +7526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7569,7 +7569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7612,7 +7612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7655,7 +7655,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863475
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7698,7 +7698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863478
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7741,7 +7741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7784,7 +7784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863484
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7827,7 +7827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7870,7 +7870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863490
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7913,7 +7913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7956,7 +7956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7999,7 +7999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8042,7 +8042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8085,7 +8085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8128,7 +8128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8214,7 +8214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8257,7 +8257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8300,7 +8300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8343,7 +8343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863523
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8386,7 +8386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8429,7 +8429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8472,7 +8472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8515,7 +8515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8558,7 +8558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8601,7 +8601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8644,7 +8644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8687,7 +8687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8730,7 +8730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8773,7 +8773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863553
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8816,7 +8816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8859,7 +8859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8902,7 +8902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8945,7 +8945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8988,7 +8988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9031,7 +9031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863571
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9074,7 +9074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9117,7 +9117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9160,7 +9160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9203,7 +9203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863583
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9246,7 +9246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9289,7 +9289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9332,7 +9332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9375,7 +9375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9418,7 +9418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9461,7 +9461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863601
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9504,7 +9504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9547,7 +9547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9590,7 +9590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9633,7 +9633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9676,7 +9676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9719,7 +9719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863619
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9762,7 +9762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863622
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9805,7 +9805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863625
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9848,7 +9848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863628
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9891,7 +9891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863631
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9934,7 +9934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863634
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9977,7 +9977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10020,7 +10020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10063,7 +10063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10106,7 +10106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10149,7 +10149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10192,7 +10192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10235,7 +10235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10278,7 +10278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10321,7 +10321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10364,7 +10364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10407,7 +10407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10450,7 +10450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863670
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10493,7 +10493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10536,7 +10536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10579,7 +10579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10622,7 +10622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10665,7 +10665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10708,7 +10708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10751,7 +10751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863691
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10794,7 +10794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10837,7 +10837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10880,7 +10880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10923,7 +10923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863703
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10966,7 +10966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11009,7 +11009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11052,7 +11052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11095,7 +11095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11138,7 +11138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11181,7 +11181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11224,7 +11224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11267,7 +11267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11310,7 +11310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863730
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11353,7 +11353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863733
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11396,7 +11396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11439,7 +11439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863739
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11482,7 +11482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11525,7 +11525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11568,7 +11568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11611,7 +11611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11654,7 +11654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863754
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11697,7 +11697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11740,7 +11740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11783,7 +11783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11826,7 +11826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863766
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11869,7 +11869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11912,7 +11912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11955,7 +11955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11998,7 +11998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12041,7 +12041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863781
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12084,7 +12084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863784
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12127,7 +12127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12170,7 +12170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12213,7 +12213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12256,7 +12256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863796
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12299,7 +12299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12342,7 +12342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12385,7 +12385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12428,7 +12428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12471,7 +12471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12514,7 +12514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12557,7 +12557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12600,7 +12600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12643,7 +12643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12686,7 +12686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863826
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12729,7 +12729,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863829
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12772,7 +12772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12815,7 +12815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863835
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12858,7 +12858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12901,7 +12901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12944,7 +12944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12987,7 +12987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13030,7 +13030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13073,7 +13073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13116,7 +13116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13159,7 +13159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13202,7 +13202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13245,7 +13245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13288,7 +13288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863868
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13331,7 +13331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13374,7 +13374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13417,7 +13417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13460,7 +13460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863880
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13503,7 +13503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863883
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13546,7 +13546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13589,7 +13589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863889
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13632,7 +13632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13675,7 +13675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13718,7 +13718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13761,7 +13761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863901
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13804,7 +13804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13847,7 +13847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13890,7 +13890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13933,7 +13933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13976,7 +13976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863916
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14019,7 +14019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14062,7 +14062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14105,7 +14105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14148,7 +14148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14191,7 +14191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14234,7 +14234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863934
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14277,7 +14277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863937
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14320,7 +14320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14363,7 +14363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863943
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14406,7 +14406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863946
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14449,7 +14449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863949
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14492,7 +14492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14535,7 +14535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14578,7 +14578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14621,7 +14621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14664,7 +14664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14707,7 +14707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14750,7 +14750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14793,7 +14793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14836,7 +14836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14879,7 +14879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14922,7 +14922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863982
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14965,7 +14965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15008,7 +15008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15051,7 +15051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!65 &1614863991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15094,7 +15094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerToDie: 0
-  lixo: {fileID: 0}
+  debris: {fileID: 0}
 --- !u!1 &1679712196
 GameObject:
   m_ObjectHideFlags: 0
@@ -15159,7 +15159,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1859563521
 PrefabInstance:
@@ -15690,7 +15690,7 @@ PrefabInstance:
     - target: {fileID: 4796247812728379204, guid: 04dadc28675d1964484fb9758a248a1a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4796247812728379204, guid: 04dadc28675d1964484fb9758a248a1a,
         type: 3}
@@ -15736,3 +15736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd37814c8caf6eb4484ea2a880340db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2114554949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4796247812728379204, guid: 04dadc28675d1964484fb9758a248a1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2114554947}
+  m_PrefabAsset: {fileID: 0}
