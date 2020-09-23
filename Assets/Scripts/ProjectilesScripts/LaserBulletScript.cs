@@ -7,6 +7,9 @@ public class LaserBulletScript : MonoBehaviour
     public GameObject laser;
     private bool hitted;
 
+	public Material signalMaterial;
+	public GameObject signalObject;
+
     private void OnTriggerEnter(Collider other)
     {
         if (!hitted)
@@ -16,4 +19,10 @@ public class LaserBulletScript : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
+	private void Update()
+	{
+		signalMaterial.color = new Color(signalMaterial.color.r, signalMaterial.color.g, signalMaterial.color.b, Mathf.Abs(Mathf.Sin(Time.time)));
+		signalObject.transform.rotation = Quaternion.identity;
+	}
 }
