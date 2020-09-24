@@ -7,8 +7,9 @@ public class LaserScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public List<GameObject> lasers = new List<GameObject>();
-
-    void Start()
+	public float CameraShakeAmplitude;
+	public float CameraShakeTime;
+	void Start()
     {
         for (int i = 0; i < lasers.Count; i++)
         {
@@ -17,8 +18,8 @@ public class LaserScript : MonoBehaviour
             lasers[2].transform.DORotate(new Vector3(Random.Range(-30, 30), 0, Random.Range(-30, 30)), .5f);
 
         }
-
-        Destroy(gameObject, 1f);
+		CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
+		Destroy(gameObject, 1f);
     }
 
 }

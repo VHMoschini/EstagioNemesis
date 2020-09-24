@@ -126,10 +126,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461401f586f0add4f9fcf8037c852191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroBar: {fileID: 0}
-  mercenaryBar: {fileID: 0}
   SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
     type: 3}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5
 --- !u!114 &2068389323143288282
 MonoBehaviour:
   m_ObjectHideFlags: 0

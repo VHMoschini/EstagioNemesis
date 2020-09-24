@@ -50,6 +50,8 @@ MonoBehaviour:
   - {fileID: 788776186647216374}
   - {fileID: 788776186717063859}
   - {fileID: 788776187647809861}
+  CameraShakeAmplitude: 40
+  CameraShakeTime: 2
 --- !u!1 &788776186647216374
 GameObject:
   m_ObjectHideFlags: 0
