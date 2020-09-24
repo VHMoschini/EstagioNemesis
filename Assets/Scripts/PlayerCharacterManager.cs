@@ -14,6 +14,8 @@ public class PlayerCharacterManager : MonoBehaviour
     public GameObject projectile;
     public int selectedBullet = 0;
     public Material bulletMaterial;
+    public int currentPlayerMaxLife;
+    public int currentPlayerCurrentLife;
 
 
     void Start()
@@ -24,7 +26,9 @@ public class PlayerCharacterManager : MonoBehaviour
         playerInst.GetComponentInChildren<PlayerController>().bulletsManager = bulletsManager;
         playerInst.GetComponentInChildren<PlayerController>().cam = cam;
         playerInst.GetComponentInChildren<PlayerController>().projectile = projectile;
-        
+        currentPlayerMaxLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.maxLife;
+
+
 
 
     }
@@ -46,9 +50,11 @@ public class PlayerCharacterManager : MonoBehaviour
 
     private void Update()
     {
+
         GameObject playerInst = GetComponentInChildren<PlayerController>().gameObject;
         playerInst.GetComponent<PlayerController>().projectile = projectile;
         playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
+        currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
         //playerInst.GetComponent<LineRenderer>().material = bulletMaterial;
 
 

@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class TurretBulletScript : MonoBehaviour
 {
+    public int damage;
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<PlayerController>())
-            Destroy(gameObject);
+        {
+            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            Destroy(gameObject, .5f);
+        }
     }
 }

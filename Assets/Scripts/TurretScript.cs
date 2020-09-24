@@ -26,7 +26,7 @@ public class TurretScript : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        yield return new WaitForSeconds(5F);
+        yield return new WaitForSeconds(Random.Range(2f, 5f));
         GameObject bulletInst = Instantiate(bullet, muzzle.transform.position, muzzle.transform.rotation);
         bulletInst.GetComponent<Rigidbody>().AddForce(transform.forward * bulletVel, ForceMode.Impulse);
         canShoot = true;

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float throwYDir;
     public float throwXDir;
     private LineRenderer lineRenderer;
+    public CharacterStats characterStats;
 
 	public BoolVariable shouldMoveCamera;
 
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
 		shouldMoveCamera.Value = true;
+        characterStats.currentLife = characterStats.maxLife;
 	}
 	
 
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
         Vector3 aimPos = cam.WorldToScreenPoint(aim.transform.position);
         throwXDir = (aimPos.x - Input.mousePosition.x) / 1000;
         throwYDir = (aimPos.y - Input.mousePosition.y) / 1000;
-
+        Debug.Log(characterStats.currentLife);
     }
 
     public void PlotTrajectory(Vector3 start, Vector3 startVelocity, float timestep, float maxTime)
@@ -97,5 +99,11 @@ public class PlayerController : MonoBehaviour
         {
             PlotTrajectory(aim.transform.position + (transform.forward * 2), (transform.rotation * new Vector3(throwXDir, throwYDir, 1)) * throwForce, 0.02f, 5f);
         }
+    }
+
+    public void TakeDamage(int damageTaken)
+    {
+        characterStats.currentLife -= damageTaken;
+        Debug.Log("tirou");
     }
 }

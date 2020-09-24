@@ -7,39 +7,69 @@ using UnityEngine.SceneManagement;
 
 public class BarsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    //barras de heroi/mercenario vars
     public int hittedEnemieCubes;
     public int hittedAllyCubes;
     int fase;
     public Image heroSnakeBar;
     public Image mercenarySnakeBar;
+    //turret vars
+    public GameObject turret;
+    public GameObject player;
+    public List<Transform> turretPlaces = new List<Transform>();
+    private bool hasSpawned;
+    //barra de vida
+    public Slider lifeBar;
+    public Text textLifeBar;
     void Start()
     {
-         fase = SceneManager.GetActiveScene().buildIndex;
+        fase = SceneManager.GetActiveScene().buildIndex;
     }
-
-    // Update is called once per frame
     void Update()
     {
+        lifeBar.maxValue = player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife;
+        lifeBar.value = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife;
+        textLifeBar.text = lifeBar.value.ToString();
         switch (fase)
         {
             case 3:
                 heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.4975f / 100), 1f);
                 mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (2.56f / 100), 1f);
+                if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
+                {
+                    CreateTurret();
+                    hasSpawned = true;
+                }
                 break;
             case 4:
                 heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.3891f / 100), 1f);
                 mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (3.03f / 100), 1f);
+                if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
+                {
+                    CreateTurret();
+                    hasSpawned = true;
+                }
                 break;
             case 5:
                 heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.4237f / 100), 1f);
                 mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (3.22f / 100), 1f);
+                if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
+                {
+                    CreateTurret();
+                    hasSpawned = true;
+                }
                 break;
         }
+    }
 
 
+    void CreateTurret()
+    {
+        for (int i = 0; i < turretPlaces.Count; i++)
+        {
+            GameObject turretInst = Instantiate(turret, turretPlaces[i].position, turretPlaces[i].rotation);
+            turretInst.GetComponentInChildren<TurretScript>().player = player.transform;
 
-
+        }
     }
 }

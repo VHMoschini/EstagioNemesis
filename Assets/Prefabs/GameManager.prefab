@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4796247812728379204}
   - component: {fileID: 4796247812728379207}
   m_Layer: 0
-  m_Name: BarsManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,9 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd37814c8caf6eb4484ea2a880340db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroBar: {fileID: 0}
-  mercenaryBar: {fileID: 0}
-  totalEnemiesCubes: 213
   hittedEnemieCubes: 0
-  totalAllyCubes: 38
   hittedAllyCubes: 0
+  heroSnakeBar: {fileID: 0}
+  mercenarySnakeBar: {fileID: 0}
