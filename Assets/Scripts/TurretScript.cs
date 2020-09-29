@@ -6,9 +6,15 @@ public class TurretScript : MonoBehaviour
 {
     private bool canShoot = true;
     public float bulletVel = 75f;
+    private bool resting;
     public Transform player;
     public GameObject bullet;
+    public GameObject turretHead;
     public GameObject muzzle;
+    //Life vars
+    public int currentLife;
+
+
     void Start()
     {
 
@@ -17,10 +23,22 @@ public class TurretScript : MonoBehaviour
 
     void Update()
     {
-        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(new Vector3(player.position.x, -player.position.y, player.position.z) - transform.position, Vector3.up), 0.5f);
-        transform.LookAt(player.transform);
-        if(canShoot)
-        StartCoroutine(Shoot());
+
+        if (!resting)
+        {
+            var q = Quaternion.LookRotation(player.position - turretHead.transform.position);
+            turretHead.transform.rotation = Quaternion.RotateTowards(turretHead.transform.rotation, q, Time.deltaTime * 50f);
+        }
+        if (canShoot)
+        {
+            StartCoroutine(Shoot());
+
+        }
+
+        if(currentLife <= 0)
+        {
+            Dead();
+        }
     }
 
     IEnumerator Shoot()
@@ -28,8 +46,27 @@ public class TurretScript : MonoBehaviour
         canShoot = false;
         yield return new WaitForSeconds(Random.Range(2f, 5f));
         GameObject bulletInst = Instantiate(bullet, muzzle.transform.position, muzzle.transform.rotation);
-        bulletInst.GetComponent<Rigidbody>().AddForce(transform.forward * bulletVel, ForceMode.Impulse);
-        canShoot = true;
+        bulletInst.GetComponent<Rigidbody>().AddForce(turretHead.transform.forward * bulletVel, ForceMode.Impulse);
+        StartCoroutine(Rest());
+    }
 
+    IEnumerator Rest()
+    {
+        resting = true;
+        yield return new WaitForSeconds(Random.Range(1f, 2f));
+        canShoot = true;
+        resting = false;
+
+    }
+
+    public void TakeDamage(int damageTaken)
+    {
+        Debug.Log("ai");
+        currentLife -= damageTaken;
+    }
+
+    public void Dead()
+    {
+        Destroy(gameObject);
     }
 }

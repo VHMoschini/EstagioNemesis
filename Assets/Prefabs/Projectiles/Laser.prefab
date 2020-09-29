@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788776185862673993}
   - component: {fileID: 788776185862673992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Laser
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -65,7 +65,8 @@ GameObject:
   - component: {fileID: 788776186647216372}
   - component: {fileID: 788776186647216375}
   - component: {fileID: 3442438836003961008}
-  m_Layer: 0
+  - component: {fileID: 1294427615823235932}
+  m_Layer: 8
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,6 +166,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1294427615823235932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788776186647216374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461401f586f0add4f9fcf8037c852191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
+    type: 3}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5
 --- !u!1 &788776186717063859
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +195,8 @@ GameObject:
   - component: {fileID: 788776186717063857}
   - component: {fileID: 788776186717063856}
   - component: {fileID: 3133944220226945530}
-  m_Layer: 0
+  - component: {fileID: 4803685025154992852}
+  m_Layer: 8
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,6 +296,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &4803685025154992852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788776186717063859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461401f586f0add4f9fcf8037c852191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
+    type: 3}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5
 --- !u!1 &788776187647809861
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +325,8 @@ GameObject:
   - component: {fileID: 788776187647809859}
   - component: {fileID: 788776187647809858}
   - component: {fileID: 8664595815180003251}
-  m_Layer: 0
+  - component: {fileID: 8444501322715841447}
+  m_Layer: 8
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,3 +426,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &8444501322715841447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788776187647809861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461401f586f0add4f9fcf8037c852191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
+    type: 3}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5

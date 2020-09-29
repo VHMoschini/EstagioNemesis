@@ -13,9 +13,5 @@ public class AmmoHighlight : MonoBehaviour
     public void ChangePosition(int index)
 	{
         GetComponent<RectTransform>().DOAnchorPosY(Ammos[index].GetComponent<RectTransform>().localPosition.y, 1f, false);
-
-
-
-
     }
 }

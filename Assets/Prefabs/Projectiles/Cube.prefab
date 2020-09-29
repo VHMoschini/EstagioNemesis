@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 3594852204183312887}
   - component: {fileID: 8630129985145789483}
   - component: {fileID: 7538696306604738396}
+  - component: {fileID: 3027134961659014356}
   - component: {fileID: 3792837573587542422}
   - component: {fileID: -7185947660788987834}
   - component: {fileID: 2441914028157254702}
-  - component: {fileID: 3027134961659014356}
-  m_Layer: 0
+  - component: {fileID: 8264649778416991128}
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -85,6 +86,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3027134961659014356
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564486407142593905}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &3792837573587542422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -130,16 +144,19 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 4
   CameraShakeTime: 4
---- !u!135 &3027134961659014356
-SphereCollider:
+--- !u!114 &8264649778416991128
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4564486407142593905}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 3
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461401f586f0add4f9fcf8037c852191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SplashWoodParticle: {fileID: 446352740511638161, guid: d1939e4eee0bbf742bd0df1a7eb64303,
+    type: 3}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5

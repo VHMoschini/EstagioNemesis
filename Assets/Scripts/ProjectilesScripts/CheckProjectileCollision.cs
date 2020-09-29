@@ -18,9 +18,9 @@ public class CheckProjectileCollision : MonoBehaviour
 			CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
             Instantiate(SplashWoodParticle, collision.transform.position, collision.transform.rotation);
         }
-        //else if (collision.gameObject.GetComponent<AllyCube>())
-        //{
-        //    barsManager.hittedAllyCubes++;
-        //}
+        else if (collision.gameObject.GetComponent<TurretScript>())
+        {
+            collision.gameObject.GetComponent<TurretScript>().TakeDamage(2);
+        }
     }
 }

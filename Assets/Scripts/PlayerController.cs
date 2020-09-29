@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
         Vector3 aimPos = cam.WorldToScreenPoint(aim.transform.position);
         throwXDir = (aimPos.x - Input.mousePosition.x) / 1000;
         throwYDir = (aimPos.y - Input.mousePosition.y) / 1000;
-        Debug.Log(characterStats.currentLife);
     }
 
     public void PlotTrajectory(Vector3 start, Vector3 startVelocity, float timestep, float maxTime)
@@ -104,6 +103,5 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damageTaken)
     {
         characterStats.currentLife -= damageTaken;
-        Debug.Log("tirou");
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2677699198152074236}
   - component: {fileID: 2241751193127091306}
   - component: {fileID: 6388597088192233438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Signal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8424987581565177356}
   - component: {fileID: 3651929538298131700}
   - component: {fileID: -3983228823250964909}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LaserBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

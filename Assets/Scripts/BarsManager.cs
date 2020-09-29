@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class BarsManager : MonoBehaviour
 {
     //barras de heroi/mercenario vars
-    public int hittedEnemieCubes;
-    public int hittedAllyCubes;
+    [HideInInspector] public int hittedEnemieCubes;
+    [HideInInspector] public int hittedAllyCubes;
     int fase;
     public Image heroSnakeBar;
     public Image mercenarySnakeBar;
@@ -33,8 +33,8 @@ public class BarsManager : MonoBehaviour
         switch (fase)
         {
             case 3:
-                heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.4975f / 100), 1f);
-                mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (2.56f / 100), 1f);
+                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4975f / 100);
+                mercenarySnakeBar.fillAmount = hittedAllyCubes * (2.56f / 100);
                 if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
                 {
                     CreateTurret();
@@ -42,8 +42,8 @@ public class BarsManager : MonoBehaviour
                 }
                 break;
             case 4:
-                heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.3891f / 100), 1f);
-                mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (3.03f / 100), 1f);
+                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.3891f / 100);
+                mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.03f / 100);
                 if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
                 {
                     CreateTurret();
@@ -51,8 +51,8 @@ public class BarsManager : MonoBehaviour
                 }
                 break;
             case 5:
-                heroSnakeBar.DOFillAmount(hittedEnemieCubes * (0.4237f / 100), 1f);
-                mercenarySnakeBar.DOFillAmount(hittedAllyCubes * (3.22f / 100), 1f);
+                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4237f / 100);
+                mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.22f / 100);
                 if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
                 {
                     CreateTurret();
@@ -72,4 +72,5 @@ public class BarsManager : MonoBehaviour
 
         }
     }
+
 }
