@@ -30,6 +30,7 @@ public class BarsManager : MonoBehaviour
         lifeBar.maxValue = player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife;
         lifeBar.value = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife;
         textLifeBar.text = lifeBar.value.ToString();
+
         switch (fase)
         {
             case 3:
