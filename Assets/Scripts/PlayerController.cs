@@ -81,13 +81,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
+		shouldMoveCamera.Value = true;
+		if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
             lineRenderer.positionCount = 0;
             bulletInst.transform.SetParent(null);
             bulletInst.GetComponent<Rigidbody>().isKinematic = false;
             bulletInst.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
-            shouldMoveCamera.Value = true;
             bulletsManager.bullets[selectedBullet].currentBulletNum--;
         }
     }
