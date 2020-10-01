@@ -13608,6 +13608,11 @@ PrefabInstance:
       propertyPath: textLifeBar
       value: 
       objectReference: {fileID: 1411043197}
+    - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
+        type: 3}
+      propertyPath: nextPhaseUnlocked
+      value: 
+      objectReference: {fileID: 1411043199}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04dadc28675d1964484fb9758a248a1a, type: 3}
 --- !u!114 &694267752 stripped
@@ -14514,6 +14519,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1411043192}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1411043199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1145097493176482007, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411043192}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1432050009
 GameObject:
   m_ObjectHideFlags: 0
@@ -14719,12 +14736,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000025909014
+      value: -0.000000059547958
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000055891674
+      value: 0.0000000128458595
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}

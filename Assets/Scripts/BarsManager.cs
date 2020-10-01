@@ -21,6 +21,8 @@ public class BarsManager : MonoBehaviour
     //barra de vida
     public Slider lifeBar;
     public Text textLifeBar;
+    public Text nextPhaseUnlocked;
+    private bool sawText;
     void Start()
     {
         fase = SceneManager.GetActiveScene().buildIndex;
@@ -40,6 +42,11 @@ public class BarsManager : MonoBehaviour
                 {
                     CreateTurret();
                     hasSpawned = true;
+                }else if(heroSnakeBar.fillAmount >= 0.6 && !sawText)
+                {
+                    StartCoroutine(ShowText());
+                    PlayerPrefs.SetInt("LastPhaseUnlocked", 2);
+                    sawText = true;
                 }
                 break;
             case 4:
@@ -50,6 +57,13 @@ public class BarsManager : MonoBehaviour
                     CreateTurret();
                     hasSpawned = true;
                 }
+                else if (heroSnakeBar.fillAmount >= 0.7 && !sawText)
+                {
+                    StartCoroutine(ShowText());
+                    PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
+                    sawText = true;
+
+                }
                 break;
             case 5:
                 heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4237f / 100);
@@ -58,6 +72,11 @@ public class BarsManager : MonoBehaviour
                 {
                     CreateTurret();
                     hasSpawned = true;
+                }
+                else if (heroSnakeBar.fillAmount >= 0.7 && !sawText)
+                {
+                    StartCoroutine(ShowText());
+                    sawText = true;
                 }
                 break;
         }
@@ -74,4 +93,12 @@ public class BarsManager : MonoBehaviour
         }
     }
 
+
+    IEnumerator ShowText()
+    {
+        nextPhaseUnlocked.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        nextPhaseUnlocked.gameObject.SetActive(false);
+
+    }
 }
