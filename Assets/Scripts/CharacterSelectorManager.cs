@@ -8,9 +8,13 @@ public class CharacterSelectorManager : MonoBehaviour
     int index;
     public GameObject rightButton;
     public GameObject leftButton;
+	
+	public GameObject charactersGeneral;
+	private bool manualMove;
+	private float oldMousePosition;
 
     void Start()
-    {
+    {/*
         for (int i = 0; i < characters.Count; i++)
         {
            if(i == 0)
@@ -19,12 +23,16 @@ public class CharacterSelectorManager : MonoBehaviour
             }else
                 characters[i].gameObject.SetActive(false);
 
-        }
+        }*/
     }
 
     // Update is called once per frame
     void Update()
     {
+		if (!manualMove)
+		{
+			charactersGeneral.transform.localPosition = Vector3.Lerp(charactersGeneral.transform.localPosition, -characters[index].transform.localPosition, 0.2f);
+		}/*
         for (int i = 0; i < characters.Count; i++)
         {
             if (i == index)
@@ -33,7 +41,7 @@ public class CharacterSelectorManager : MonoBehaviour
             }
             else
                 characters[i].gameObject.SetActive(false);
-        }
+        }*/
 
         if(index == characters.Count-1)
         {
@@ -50,7 +58,35 @@ public class CharacterSelectorManager : MonoBehaviour
             leftButton.SetActive(true);
     }
 
-    public void RightArrow()
+	private void OnMouseDown()
+	{
+		oldMousePosition = Input.mousePosition.x;
+		manualMove = true;
+	}
+
+	private void OnMouseDrag()
+	{
+		charactersGeneral.transform.localPosition -= new Vector3(oldMousePosition - Input.mousePosition.x, 0, 0);
+		oldMousePosition = Input.mousePosition.x;
+	}
+
+	private void OnMouseUp()
+	{
+		float lastDist = 99999;
+		for (int i = 0; i < characters.Count; i++)
+		{
+			if (Vector3.Distance(characters[i].transform.position, transform.position) < lastDist)
+			{
+				lastDist = Vector3.Distance(characters[i].transform.position, transform.position);
+				Debug.Log(lastDist);
+				index = i;
+			}
+
+		}
+		manualMove = false;
+	}
+
+	public void RightArrow()
     {
         index++;
     }
