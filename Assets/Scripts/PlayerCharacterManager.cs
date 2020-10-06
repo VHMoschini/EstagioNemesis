@@ -6,6 +6,7 @@ public class PlayerCharacterManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public List<GameObject> players = new List<GameObject>();
+    public List<GameObject> projectiles = new List<GameObject>();
     int selectedPlayerIndex;
     public BulletsManager bulletsManager;
     public Camera cam;
@@ -13,7 +14,6 @@ public class PlayerCharacterManager : MonoBehaviour
     [HideInInspector] public GameObject bulletInst;
     public GameObject projectile;
     public int selectedBullet = 0;
-    public Material bulletMaterial;
     public int currentPlayerMaxLife;
     public int currentPlayerCurrentLife;
 
@@ -28,35 +28,30 @@ public class PlayerCharacterManager : MonoBehaviour
         playerInst.GetComponentInChildren<PlayerController>().projectile = projectile;
         currentPlayerMaxLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.maxLife;
 
-
-
-
     }
 
-    public void SetProjectile(GameObject _projectile)
+
+    public void SetProjectileIndex()
     {
-        projectile = _projectile;
+        if (selectedBullet < bulletsManager.bullets.Length-1)
+            selectedBullet++;
+        else
+            selectedBullet = 0;
     }
 
-    public void SetProjectileIndex(int _selectedBullet)
+
+    public void SetProjectile()
     {
-        selectedBullet = _selectedBullet;
+        projectile = projectiles[selectedBullet];
     }
 
-    //public void SetBulletMaterial(Material _material)
-    //{
-    //    bulletMaterial = _material;
-    //}
 
     private void Update()
     {
-
+        SetProjectile();
         GameObject playerInst = GetComponentInChildren<PlayerController>().gameObject;
         playerInst.GetComponent<PlayerController>().projectile = projectile;
         playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
         currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
-        //playerInst.GetComponent<LineRenderer>().material = bulletMaterial;
-
-
     }
 }

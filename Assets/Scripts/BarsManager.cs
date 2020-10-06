@@ -19,7 +19,7 @@ public class BarsManager : MonoBehaviour
     public List<Transform> turretPlaces = new List<Transform>();
     private bool hasSpawned;
     //barra de vida
-    public Slider lifeBar;
+    public Image lifeBarFill;
     public Text textLifeBar;
     public Text nextPhaseUnlocked;
     private bool sawText;
@@ -29,10 +29,8 @@ public class BarsManager : MonoBehaviour
     }
     void Update()
     {
-        lifeBar.maxValue = player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife;
-        lifeBar.value = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife;
-        textLifeBar.text = lifeBar.value.ToString();
-
+        lifeBarFill.fillAmount = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife/100f;
+        textLifeBar.text = (lifeBarFill.fillAmount*100).ToString();
         switch (fase)
         {
             case 3:

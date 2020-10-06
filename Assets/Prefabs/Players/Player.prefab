@@ -62,6 +62,10 @@ MonoBehaviour:
   - {fileID: 5972639141631056356, guid: 84b9bc39a6beca34bbd1c1d2dac22fe7, type: 3}
   - {fileID: 5972639141631056356, guid: 48ddca9d5a6a3cf47a9f5ac5e433e495, type: 3}
   - {fileID: 5972639141631056356, guid: cc900703974227243bf1bba28ca2e9c0, type: 3}
+  projectiles:
+  - {fileID: 8771839364320873925, guid: 81973005fada7ae4599da82a66c7ed08, type: 3}
+  - {fileID: 4564486407142593905, guid: d5518b4e152428f448d295da00c9d4ea, type: 3}
+  - {fileID: 8424987581565177357, guid: 183b9f8ca4754d5499c279bedf3858a8, type: 3}
   bulletsManager: {fileID: 0}
   cam: {fileID: 0}
   barsManager: {fileID: 0}
@@ -69,3 +73,5 @@ MonoBehaviour:
   projectile: {fileID: 8771839364320873925, guid: 81973005fada7ae4599da82a66c7ed08,
     type: 3}
   selectedBullet: 0
+  currentPlayerMaxLife: 0
+  currentPlayerCurrentLife: 0

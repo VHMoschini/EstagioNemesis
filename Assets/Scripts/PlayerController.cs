@@ -104,4 +104,7 @@ public class PlayerController : MonoBehaviour
     {
         characterStats.currentLife -= damageTaken;
     }
+
+
+
 }

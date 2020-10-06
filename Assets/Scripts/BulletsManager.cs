@@ -10,6 +10,9 @@ public class BulletsManager : MonoBehaviour
     // Start is called before the first frame update
 
     public Bullet[] bullets;
+    public Text bulletText;
+    private int index;
+    public PlayerCharacterManager playerCharacterManager;
 
     void Start()
     {
@@ -21,10 +24,7 @@ public class BulletsManager : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < bullets.Length; i++)
-        {
-            bullets[i].bulletNumText.text = bullets[i].currentBulletNum.ToString();
-        }
+        bulletText.text = bullets[playerCharacterManager.selectedBullet].currentBulletNum + "/" + bullets[playerCharacterManager.selectedBullet].maxBulletNum;
     }
 
 }
@@ -35,6 +35,5 @@ public class Bullet
 {
     public int maxBulletNum;
     public int currentBulletNum;
-    public Text bulletNumText;
 
 }
