@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 
 public class BulletsManager : MonoBehaviour
@@ -10,7 +11,7 @@ public class BulletsManager : MonoBehaviour
     // Start is called before the first frame update
 
     public Bullet[] bullets;
-    public Text bulletText;
+    public TMP_Text bulletText;
     private int index;
     public PlayerCharacterManager playerCharacterManager;
 

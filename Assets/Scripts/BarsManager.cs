@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class BarsManager : MonoBehaviour
 {
@@ -20,8 +21,8 @@ public class BarsManager : MonoBehaviour
     private bool hasSpawned;
     //barra de vida
     public Image lifeBarFill;
-    public Text textLifeBar;
-    public Text nextPhaseUnlocked;
+    public TMP_Text textLifeBar;
+    public TMP_Text nextPhaseUnlocked;
     private bool sawText;
     void Start()
     {
