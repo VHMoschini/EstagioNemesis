@@ -56,9 +56,13 @@ public class CharacterSelectorManager : MonoBehaviour
         }
         else
             leftButton.SetActive(true);
+
+
+        PlayerPrefs.SetInt("playerIndex", index);
+
     }
 
-	private void OnMouseDown()
+    private void OnMouseDown()
 	{
 		oldMousePosition = Input.mousePosition.x;
 		manualMove = true;
@@ -94,11 +98,5 @@ public class CharacterSelectorManager : MonoBehaviour
     public void LeftArrow()
     {
         index--;
-    }
-
-
-    public void Play()
-    {
-        PlayerPrefs.SetInt("playerIndex", index);
     }
 }
