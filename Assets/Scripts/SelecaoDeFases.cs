@@ -26,4 +26,9 @@ public class SelecaoDeFases : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

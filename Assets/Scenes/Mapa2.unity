@@ -15535,6 +15535,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2665621046465602174, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1975817958}
+    - target: {fileID: 2665621046465602174, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1975817958}
     - target: {fileID: 3230439202894202437, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -15604,6 +15614,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1975817958}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SelecaoDeFases, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: VaiPraFase
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1975817958}
+    - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UnPause
       objectReference: {fileID: 0}
     - target: {fileID: 4987772983265138140, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
@@ -15760,6 +15810,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1859563526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4076680570021977823, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 1859563521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1859563527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2024668291249071804, guid: 42f35ba389e0a6c44a781edbe3c04e82,
@@ -15853,6 +15909,11 @@ PrefabInstance:
       propertyPath: bulletsManager
       value: 
       objectReference: {fileID: 393398423}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: defeatPanel
+      value: 
+      objectReference: {fileID: 1859563526}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76853de4c402a744a15996ce8afdcd3, type: 3}
 --- !u!114 &1912809660 stripped

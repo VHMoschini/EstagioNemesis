@@ -7,6 +7,8 @@ public class PlayerCharacterManager : MonoBehaviour
     // Start is called before the first frame update
     public List<GameObject> players = new List<GameObject>();
     public List<GameObject> projectiles = new List<GameObject>();
+    public GameObject defeatPanel;
+    private bool dead;
     int selectedPlayerIndex;
     public BulletsManager bulletsManager;
     public Camera cam;
@@ -53,5 +55,18 @@ public class PlayerCharacterManager : MonoBehaviour
         playerInst.GetComponent<PlayerController>().projectile = projectile;
         playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
         currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
+        if(currentPlayerCurrentLife == 0 && !dead)
+        {
+            dead = true;
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        defeatPanel.SetActive(true);
+        Time.timeScale = 0;
+        dead = false;
+
     }
 }

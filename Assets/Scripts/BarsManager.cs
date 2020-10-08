@@ -34,7 +34,7 @@ public class BarsManager : MonoBehaviour
         textLifeBar.text = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife.ToString();
         switch (fase)
         {
-            case 3:
+            case 2:
                 heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4975f / 100);
                 mercenarySnakeBar.fillAmount = hittedAllyCubes * (2.56f / 100);
                 if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
@@ -48,7 +48,7 @@ public class BarsManager : MonoBehaviour
                     sawText = true;
                 }
                 break;
-            case 4:
+            case 3:
                 heroSnakeBar.fillAmount = hittedEnemieCubes * (0.3891f / 100);
                 mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.03f / 100);
                 if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
@@ -64,7 +64,7 @@ public class BarsManager : MonoBehaviour
 
                 }
                 break;
-            case 5:
+            case 4:
                 heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4237f / 100);
                 mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.22f / 100);
                 if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)

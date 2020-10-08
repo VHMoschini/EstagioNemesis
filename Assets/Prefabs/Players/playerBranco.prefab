@@ -149,7 +149,7 @@ MonoBehaviour:
     type: 3}
   aim: {fileID: 5972639142939190322}
   bulletInst: {fileID: 0}
-  throwForce: 50
+  throwForce: 75
   throwYDir: 0
   throwXDir: 0
   characterStats: {fileID: 11400000, guid: 45cd2efdc2281284f976808a20b9f899, type: 2}
