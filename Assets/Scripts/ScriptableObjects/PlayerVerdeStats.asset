@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerVerdeStats
   m_EditorClassIdentifier: 
   maxLife: 75
-  currentLife: 0
+  currentLife: 75

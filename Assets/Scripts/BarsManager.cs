@@ -30,8 +30,8 @@ public class BarsManager : MonoBehaviour
     }
     void Update()
     {
-        lifeBarFill.fillAmount = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife/100f;
-        textLifeBar.text = (lifeBarFill.fillAmount*100).ToString();
+        lifeBarFill.fillAmount = ((player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife*100f)/ player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife)/100f;
+        textLifeBar.text = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife.ToString();
         switch (fase)
         {
             case 3:
