@@ -20,11 +20,15 @@ public class PlayerController : MonoBehaviour
 
 	public Camera cam;
 
+	public static bool isAiming;
+	public static bool shouldShoot;
+
     void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
 		shouldMoveCamera.Value = true;
         characterStats.currentLife = characterStats.maxLife;
+		shouldShoot = true;
 	}
 	
 
@@ -71,6 +75,7 @@ public class PlayerController : MonoBehaviour
     private void OnMouseDown()
     {
 		shouldMoveCamera.Value = false;
+		isAiming = true;
         if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
             bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
@@ -82,13 +87,22 @@ public class PlayerController : MonoBehaviour
     private void OnMouseUp()
     {
 		shouldMoveCamera.Value = true;
+		isAiming = false;
 		if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
-            lineRenderer.positionCount = 0;
-            bulletInst.transform.SetParent(null);
-            bulletInst.GetComponent<Rigidbody>().isKinematic = false;
-            bulletInst.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
-            bulletsManager.bullets[selectedBullet].currentBulletNum--;
+			if (shouldShoot)
+			{
+				lineRenderer.positionCount = 0;
+				bulletInst.transform.SetParent(null);
+				bulletInst.GetComponent<Rigidbody>().isKinematic = false;
+				bulletInst.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(throwXDir, throwYDir, 1) * throwForce, ForceMode.VelocityChange);
+				bulletsManager.bullets[selectedBullet].currentBulletNum--;
+			}
+			else
+			{
+				lineRenderer.positionCount = 0;
+				Destroy(bulletInst);
+			}
         }
     }
 
