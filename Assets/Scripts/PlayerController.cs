@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     private LineRenderer lineRenderer;
     public CharacterStats characterStats;
 
+	[Header("When Hit")]
+	public float CameraShakeAmplitude;
+	public float CameraShakeTime;
+
 	public BoolVariable shouldMoveCamera;
 
 	public Camera cam;
@@ -117,7 +121,8 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damageTaken)
     {
         characterStats.currentLife -= damageTaken;
-    }
+		CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
+	}
 
 
 

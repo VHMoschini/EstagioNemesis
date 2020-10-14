@@ -151,6 +151,8 @@ MonoBehaviour:
   throwYDir: 0
   throwXDir: 0
   characterStats: {fileID: 11400000, guid: 615f44bc6f69bec4097e6b67be64f38a, type: 2}
+  CameraShakeAmplitude: 3
+  CameraShakeTime: 0.5
   shouldMoveCamera: {fileID: 11400000, guid: b747e293565940741aad89639972a97b, type: 2}
   cam: {fileID: 0}
 --- !u!120 &5972639142830015103
