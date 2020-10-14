@@ -26,7 +26,7 @@ public class TurretScript : MonoBehaviour
 
         if (!resting)
         {
-            var q = Quaternion.LookRotation(player.position - turretHead.transform.position);
+            var q = Quaternion.LookRotation(player.position + Vector3.up*2 - turretHead.transform.position);
             turretHead.transform.rotation = Quaternion.RotateTowards(turretHead.transform.rotation, q, Time.deltaTime * 50f);
         }
         if (canShoot)
@@ -61,7 +61,7 @@ public class TurretScript : MonoBehaviour
 
     public void TakeDamage(int damageTaken)
     {
-        Debug.Log("ai");
+
         currentLife -= damageTaken;
     }
 

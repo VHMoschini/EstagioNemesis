@@ -20,7 +20,7 @@ public class CheckProjectileCollision : MonoBehaviour
         }
         else if (collision.gameObject.GetComponent<TurretScript>())
         {
-            collision.gameObject.GetComponent<TurretScript>().TakeDamage(2);
+            collision.gameObject.GetComponent<TurretScript>().TakeDamage(3);
         }
     }
 }

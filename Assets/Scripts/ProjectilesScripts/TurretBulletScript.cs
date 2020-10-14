@@ -7,11 +7,11 @@ public class TurretBulletScript : MonoBehaviour
     public int damage;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.GetComponent<PlayerController>())
+        if (collision.gameObject.GetComponent<PlayerController>())
         {
-            other.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
             Destroy(gameObject, .5f);
         }
     }

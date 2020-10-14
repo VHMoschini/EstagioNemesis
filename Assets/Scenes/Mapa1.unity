@@ -1813,6 +1813,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661708
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1854,6 +1856,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1895,6 +1899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1936,6 +1942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1977,6 +1985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2018,6 +2028,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661723
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2059,6 +2071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661726
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2100,6 +2114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2141,6 +2157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661732
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2182,6 +2200,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661735
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2223,6 +2243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661738
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2264,6 +2286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2305,6 +2329,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661744
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2346,6 +2372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2387,6 +2415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661750
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2428,6 +2458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661753
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2469,6 +2501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661756
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2510,6 +2544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661759
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2551,6 +2587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2592,6 +2630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661765
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2633,6 +2673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661768
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2674,6 +2716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661771
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2715,6 +2759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661774
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2756,6 +2802,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661777
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2797,6 +2845,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661780
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2838,6 +2888,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661783
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2879,6 +2931,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661786
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2920,6 +2974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661789
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2961,6 +3017,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661792
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3002,6 +3060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661795
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3043,6 +3103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661798
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3084,6 +3146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661801
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3125,6 +3189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3166,6 +3232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661807
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3207,6 +3275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661810
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3248,6 +3318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3289,6 +3361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3330,6 +3404,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3371,6 +3447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85c53ab0441b53458d7e0e8db626404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerToDie: 0
+  debris: {fileID: 0}
 --- !u!54 &278661822
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12160,7 +12238,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031290175}
-  m_LocalRotation: {x: 0.19305676, y: -0.000000026006383, z: 0.000000005116971, w: 0.9811876}
+  m_LocalRotation: {x: 0.19305676, y: -0.00000005977175, z: 0.000000011760586, w: 0.9811876}
   m_LocalPosition: {x: 0.000005254983, y: 27.2, z: -60.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12364,12 +12442,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000059547958
+      value: -0.000000025909014
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000128458595
+      value: 0.0000000055891674
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -12504,12 +12582,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000003444773
+      value: -0.000000051330414
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000006777874
+      value: 0.000000010099682
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -12926,6 +13004,35 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5972639141588859917}
+    - target: {fileID: 1396166365437136025, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: projectilesImage.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 1acf2a9f14e95954c8909016d6c2e315,
+        type: 3}
+    - target: {fileID: 1396166365437136025, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: projectilesImage.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: c4655eb1e248b4a499151bcb048a41aa,
+        type: 3}
+    - target: {fileID: 1396166365437136025, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: projectilesImage.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: e4c805a24a1384e4eab40bf2feb2f45e,
+        type: 3}
+    - target: {fileID: 1398941267515698921, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1acf2a9f14e95954c8909016d6c2e315,
+        type: 3}
+    - target: {fileID: 1398941267515698921, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2665621046465602174, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13011,6 +13118,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2144933794}
+    - target: {fileID: 6491731461794625097, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2552f6532e4b71a43b08f5e6e06bb157,
+        type: 3}
+    - target: {fileID: 6491731461794625097, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f35ba389e0a6c44a781edbe3c04e82, type: 3}
 --- !u!114 &193730920986547844 stripped
@@ -14375,12 +14493,12 @@ PrefabInstance:
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 92.600006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 231.90002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
