@@ -24,6 +24,7 @@ public class BarsManager : MonoBehaviour
     public TMP_Text textLifeBar;
     public TMP_Text nextPhaseUnlocked;
     private bool sawText;
+    public GameObject goToNextPhaseButton;
     void Start()
     {
         fase = SceneManager.GetActiveScene().buildIndex;
@@ -45,6 +46,7 @@ public class BarsManager : MonoBehaviour
                 {
                     StartCoroutine(ShowText());
                     PlayerPrefs.SetInt("LastPhaseUnlocked", 2);
+                    goToNextPhaseButton.SetActive(true);
                     sawText = true;
                 }
                 break;
@@ -60,6 +62,7 @@ public class BarsManager : MonoBehaviour
                 {
                     StartCoroutine(ShowText());
                     PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
+                    goToNextPhaseButton.SetActive(true);
                     sawText = true;
 
                 }

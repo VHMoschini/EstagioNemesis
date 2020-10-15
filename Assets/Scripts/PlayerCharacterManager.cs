@@ -57,7 +57,7 @@ public class PlayerCharacterManager : MonoBehaviour
         playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
         currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
         playerInst.GetComponent<LineRenderer>().startColor = colors[selectedBullet];
-        Debug.Log(selectedBullet);
+
 
         if (currentPlayerCurrentLife == 0 && !dead)
         {
