@@ -14,10 +14,11 @@ public class PlayerCharacterManager : MonoBehaviour
     public Camera cam;
     public BarsManager barsManager;
     [HideInInspector] public GameObject bulletInst;
-    public GameObject projectile;
-    public int selectedBullet = 0;
-    public int currentPlayerMaxLife;
-    public int currentPlayerCurrentLife;
+    [HideInInspector] public GameObject projectile;
+    [HideInInspector] public int selectedBullet = 0;
+    [HideInInspector] public int currentPlayerMaxLife;
+    [HideInInspector] public int currentPlayerCurrentLife;
+    public Color[] colors;
 
 
     void Start()
@@ -55,7 +56,10 @@ public class PlayerCharacterManager : MonoBehaviour
         playerInst.GetComponent<PlayerController>().projectile = projectile;
         playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
         currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
-        if(currentPlayerCurrentLife == 0 && !dead)
+        playerInst.GetComponent<LineRenderer>().startColor = colors[selectedBullet];
+        Debug.Log(selectedBullet);
+
+        if (currentPlayerCurrentLife == 0 && !dead)
         {
             dead = true;
             Die();

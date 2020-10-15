@@ -12238,7 +12238,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031290175}
-  m_LocalRotation: {x: 0.19305676, y: -0.00000005977175, z: 0.000000011760586, w: 0.9811876}
+  m_LocalRotation: {x: 0.19305676, y: -0.000000026006383, z: 0.000000005116971, w: 0.9811876}
   m_LocalPosition: {x: 0.000005254983, y: 27.2, z: -60.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12582,12 +12582,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000051330414
+      value: -0.00000003444773
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010099682
+      value: 0.000000006777874
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -14396,6 +14396,11 @@ PrefabInstance:
       objectReference: {fileID: 1031290175}
     - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
         type: 3}
+      propertyPath: colors.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
       propertyPath: bulletsManager
       value: 
       objectReference: {fileID: 1890736030}
@@ -14419,6 +14424,61 @@ PrefabInstance:
       propertyPath: defeatPanel
       value: 
       objectReference: {fileID: 193730920986547849}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[0].g
+      value: 0.37254903
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[0].b
+      value: 0.60784316
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[1].r
+      value: 0.60784316
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[1].g
+      value: 0.41960788
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[1].b
+      value: 0.121568635
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[2].r
+      value: 0.5372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[2].g
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[2].b
+      value: 0.050980397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[0].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[1].a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: colors.Array.data[2].a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76853de4c402a744a15996ce8afdcd3, type: 3}
 --- !u!114 &5972639141588859917 stripped
