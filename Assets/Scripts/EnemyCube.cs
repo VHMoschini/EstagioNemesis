@@ -11,12 +11,14 @@ public class EnemyCube : MonoBehaviour
 
 	public float timerToDie;
 	public GameObject debris;
-	
-    void Start()
+	public GameObject feedback;
+
+	void Start()
     {
 		startingPos = transform.position;
 		debris = Resources.Load<GameObject>("Debris");
-    }
+		feedback = Resources.Load<GameObject>("Feedback Positivo");
+	}
 	
 
 	private void OnCollisionEnter(Collision collision)
@@ -49,6 +51,7 @@ public class EnemyCube : MonoBehaviour
 		if (isGrounded)
 		{
             GetComponentInParent<BarsManager>().hittedEnemieCubes++;
+			Instantiate(feedback, transform.position, transform.rotation, null);
 			Instantiate(debris, new Vector3(transform.position.x, hitPos, transform.position.z), Quaternion.identity, null);
 			Destroy(gameObject);
 		}

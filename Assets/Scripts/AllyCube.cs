@@ -9,19 +9,22 @@ public class AllyCube : MonoBehaviour
 
 	public float timerToDie;
 	public GameObject debris;
+	public GameObject feedback;
 
 	
 	private void Start()
     {
         startingPos = transform.position;
 		debris = Resources.Load<GameObject>("Debris");
+		feedback = Resources.Load<GameObject>("Feedback Negativo");
 	}
     private void OnCollisionEnter(Collision collision)
     {
         if (Vector3.Distance(startingPos, transform.position) > 1 && collision.collider.CompareTag("Ground"))
         {
             GetComponentInParent<BarsManager>().hittedAllyCubes++;
-            isGrounded = true;
+			Instantiate(feedback, transform.position, transform.rotation, null);
+			isGrounded = true;
 			StartCoroutine(TurnToRubble(collision.GetContact(0).point.y));
 		}
 
