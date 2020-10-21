@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class ParticleForceFieldPositioner : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-		transform.position = Camera.main.ScreenToWorldPoint(transform.position);
-    }
+	private GameObject player;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void Start()
+	{
+		transform.position = Camera.main.ScreenToWorldPoint(transform.position);
+		player = FindObjectOfType<PlayerCharacterManager>().gameObject;
+		transform.parent = player.transform;
+	}
 }

@@ -12478,7 +12478,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031290175}
-  m_LocalRotation: {x: 0.19305676, y: -0.00000005977175, z: 0.000000011760586, w: 0.9811876}
+  m_LocalRotation: {x: 0.19305676, y: -0.000000026006383, z: 0.000000005116971, w: 0.9811876}
   m_LocalPosition: {x: 0.000005254983, y: 27.2, z: -60.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12682,12 +12682,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000025909014
+      value: -0.000000059547958
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000055891674
+      value: 0.0000000128458595
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -12822,12 +12822,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000051330414
+      value: -0.00000003444773
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010099682
+      value: 0.000000006777874
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -12985,6 +12985,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1776079916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8611481881114398595, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 193730920986547843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1818416325 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
@@ -13249,6 +13255,16 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5972639141588859917}
+    - target: {fileID: 1279067569921115241, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2144933794}
+    - target: {fileID: 1279067569921115241, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2144933794}
     - target: {fileID: 1396166365437136025, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
       propertyPath: projectilesImage.Array.data[0]
@@ -14766,6 +14782,11 @@ PrefabInstance:
       propertyPath: defeatPanel
       value: 
       objectReference: {fileID: 193730920986547849}
+    - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: VictoryPanel
+      value: 
+      objectReference: {fileID: 1776079916}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b76853de4c402a744a15996ce8afdcd3, type: 3}
 --- !u!114 &5972639141588859917 stripped

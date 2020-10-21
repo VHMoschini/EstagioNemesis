@@ -23,7 +23,7 @@ public class BarsManager : MonoBehaviour
     public Image lifeBarFill;
     public TMP_Text textLifeBar;
     public TMP_Text nextPhaseUnlocked;
-    private bool sawText;
+    [HideInInspector] public bool sawText;
     public GameObject goToNextPhaseButton;
     void Start()
     {

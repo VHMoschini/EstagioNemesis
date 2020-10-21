@@ -8,6 +8,7 @@ public class PlayerCharacterManager : MonoBehaviour
     public List<GameObject> players = new List<GameObject>();
     public List<GameObject> projectiles = new List<GameObject>();
     public GameObject defeatPanel;
+	public GameObject VictoryPanel;
     private bool dead;
     int selectedPlayerIndex;
     public BulletsManager bulletsManager;
@@ -20,16 +21,24 @@ public class PlayerCharacterManager : MonoBehaviour
     [HideInInspector] public int currentPlayerCurrentLife;
     public Color[] colors;
 
+	
+	private GameObject playerInst;
+	private PlayerController playerController;
+	private LineRenderer lineRenderer;
 
-    void Start()
+
+
+	void Start()
     {
         selectedPlayerIndex = PlayerPrefs.GetInt("playerIndex");
-        GameObject playerInst = Instantiate(players[selectedPlayerIndex], transform.position, transform.rotation);
+        playerInst = Instantiate(players[selectedPlayerIndex], transform.position, transform.rotation);
         playerInst.transform.SetParent(transform);
-        playerInst.GetComponentInChildren<PlayerController>().bulletsManager = bulletsManager;
-        playerInst.GetComponentInChildren<PlayerController>().cam = cam;
-        playerInst.GetComponentInChildren<PlayerController>().projectile = projectile;
-        currentPlayerMaxLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.maxLife;
+		playerController = playerInst.GetComponentInChildren<PlayerController>();
+		lineRenderer = playerInst.GetComponentInChildren<LineRenderer>();
+        playerController.bulletsManager = bulletsManager;
+		playerController.cam = cam;
+		playerController.projectile = projectile;
+        currentPlayerMaxLife = playerController.characterStats.maxLife;
 
     }
 
@@ -52,11 +61,10 @@ public class PlayerCharacterManager : MonoBehaviour
     private void Update()
     {
         SetProjectile();
-        GameObject playerInst = GetComponentInChildren<PlayerController>().gameObject;
-        playerInst.GetComponent<PlayerController>().projectile = projectile;
-        playerInst.GetComponent<PlayerController>().selectedBullet = selectedBullet;
-        currentPlayerCurrentLife = playerInst.GetComponentInChildren<PlayerController>().characterStats.currentLife;
-        playerInst.GetComponent<LineRenderer>().startColor = colors[selectedBullet];
+		playerController.projectile = projectile;
+		playerController.selectedBullet = selectedBullet;
+        currentPlayerCurrentLife = playerController.characterStats.currentLife;
+        lineRenderer.startColor = colors[selectedBullet];
 
 
         if (currentPlayerCurrentLife == 0 && !dead)
@@ -73,4 +81,18 @@ public class PlayerCharacterManager : MonoBehaviour
         dead = false;
 
     }
+
+	public IEnumerator NoMoreBullets()
+	{
+		yield return new WaitForSeconds(5);
+		if (barsManager.sawText)
+		{
+			VictoryPanel.SetActive(true);
+		}
+		else
+		{
+			Die();
+		}
+		Time.timeScale = 0;
+	}
 }

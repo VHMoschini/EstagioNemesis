@@ -26,7 +26,22 @@ public class BulletsManager : MonoBehaviour
     private void Update()
     {
         bulletText.text = bullets[playerCharacterManager.selectedBullet].currentBulletNum + "/" + bullets[playerCharacterManager.selectedBullet].maxBulletNum;
-    }
+
+
+		int emptyBullets = 0;
+		for (int i = 0; i < bullets.Length; i++)
+		{
+			if (bullets[i].currentBulletNum == 0)
+			{
+				emptyBullets++;
+			}
+		}
+		if (emptyBullets == bullets.Length)
+		{
+			playerCharacterManager.StartCoroutine("NoMoreBullets");
+
+		}
+	}
 
 }
 
