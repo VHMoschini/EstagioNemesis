@@ -5334,9 +5334,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilesImage:
-  - {fileID: 21300000, guid: 38187c260d181c045bfad2ca116649e4, type: 3}
-  - {fileID: 21300000, guid: f5a16e57cd96d97429ba909f5c84b30f, type: 3}
-  - {fileID: 21300000, guid: 9c9c3cbac62eaf04bbea735b861daff0, type: 3}
+  - {fileID: 21300000, guid: 1acf2a9f14e95954c8909016d6c2e315, type: 3}
+  - {fileID: 21300000, guid: c4655eb1e248b4a499151bcb048a41aa, type: 3}
+  - {fileID: 21300000, guid: e4c805a24a1384e4eab40bf2feb2f45e, type: 3}
   projectileIndex: 0
 --- !u!1 &8302065300512727380
 GameObject:
