@@ -182,6 +182,7 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 3
   CameraShakeTime: 0.5
+  damageToDo: 3
 --- !u!1 &788776186717063859
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,6 +313,7 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 3
   CameraShakeTime: 0.5
+  damageToDo: 5
 --- !u!1 &788776187647809861
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,3 +444,4 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 3
   CameraShakeTime: 0.5
+  damageToDo: 3

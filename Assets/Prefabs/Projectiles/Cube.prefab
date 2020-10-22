@@ -160,3 +160,4 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 3
   CameraShakeTime: 0.5
+  damageToDo: 4

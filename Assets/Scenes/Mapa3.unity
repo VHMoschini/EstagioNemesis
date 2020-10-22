@@ -13945,6 +13945,16 @@ PrefabInstance:
       propertyPath: lifeBarFill
       value: 
       objectReference: {fileID: 1411043197}
+    - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
+        type: 3}
+      propertyPath: goToNextPhaseButton
+      value: 
+      objectReference: {fileID: 1411043201}
+    - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
+        type: 3}
+      propertyPath: selecao
+      value: 
+      objectReference: {fileID: 721695157}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04dadc28675d1964484fb9758a248a1a, type: 3}
 --- !u!114 &694267752 stripped
@@ -14993,6 +15003,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1411043192}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1411043201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8910673701692784771, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 1411043192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432050009
 GameObject:
   m_ObjectHideFlags: 0
@@ -15173,12 +15189,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000059547958
+      value: -0.000000025909014
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000128458595
+      value: 0.0000000055891674
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}

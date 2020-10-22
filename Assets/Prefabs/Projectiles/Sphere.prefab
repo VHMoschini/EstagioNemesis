@@ -130,6 +130,7 @@ MonoBehaviour:
     type: 3}
   CameraShakeAmplitude: 3
   CameraShakeTime: 0.5
+  damageToDo: 2
 --- !u!114 &2068389323143288282
 MonoBehaviour:
   m_ObjectHideFlags: 0

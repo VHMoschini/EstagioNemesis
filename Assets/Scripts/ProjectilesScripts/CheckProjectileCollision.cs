@@ -9,6 +9,7 @@ public class CheckProjectileCollision : MonoBehaviour
     public GameObject SplashWoodParticle;
 	public float CameraShakeAmplitude;
 	public float CameraShakeTime;
+    public int damageToDo = 3;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -20,7 +21,11 @@ public class CheckProjectileCollision : MonoBehaviour
         }
         else if (collision.gameObject.GetComponent<TurretScript>())
         {
-            collision.gameObject.GetComponent<TurretScript>().TakeDamage(3);
+            collision.gameObject.GetComponent<TurretScript>().TakeDamage(damageToDo);
+        }
+        else if (collision.gameObject.GetComponent<EnemyAttack>())
+        {
+            collision.gameObject.GetComponent<EnemyAttack>().TakeDamage(damageToDo);
         }
     }
 }
