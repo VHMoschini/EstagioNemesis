@@ -1,14 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterSelectorManager : MonoBehaviour
 {
     public List<GameObject> characters = new List<GameObject>();
     int index;
-    public GameObject rightButton;
-    public GameObject leftButton;
-	
+    public Image rightButton;
+    public Image leftButton;
+	public Sprite rightArrow;
+	public Sprite rightArrowFalse;
+	public Sprite leftArrow;
+	public Sprite leftArrowFalse;
+
 	public GameObject charactersGeneral;
 	private bool manualMove;
 	private float oldMousePosition;
@@ -45,17 +50,17 @@ public class CharacterSelectorManager : MonoBehaviour
 
         if(index == characters.Count-1)
         {
-            rightButton.SetActive(false);
+            rightButton.sprite = rightArrowFalse;
         }else
-            rightButton.SetActive(true);
+			rightButton.sprite = rightArrow;
 
 
         if(index == 0)
         {
-            leftButton.SetActive(false);
-        }
+            leftButton.sprite = leftArrowFalse;
+		}
         else
-            leftButton.SetActive(true);
+            leftButton.sprite = leftArrow;
 
 
         PlayerPrefs.SetInt("playerIndex", index);
