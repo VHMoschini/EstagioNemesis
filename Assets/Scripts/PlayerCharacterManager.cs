@@ -42,6 +42,22 @@ public class PlayerCharacterManager : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        SetProjectile();
+        playerController.projectile = projectile;
+        playerController.selectedBullet = selectedBullet;
+        currentPlayerCurrentLife = playerController.characterStats.currentLife;
+        lineRenderer.startColor = colors[selectedBullet];
+
+
+        if (currentPlayerCurrentLife <= 0 && !dead)
+        {
+            dead = true;
+            Die();
+        }
+    }
+
 
     public void SetProjectileIndex()
     {
@@ -58,21 +74,7 @@ public class PlayerCharacterManager : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        SetProjectile();
-		playerController.projectile = projectile;
-		playerController.selectedBullet = selectedBullet;
-        currentPlayerCurrentLife = playerController.characterStats.currentLife;
-        lineRenderer.startColor = colors[selectedBullet];
 
-
-        if (currentPlayerCurrentLife == 0 && !dead)
-        {
-            dead = true;
-            Die();
-        }
-    }
 
     public void Die()
     {

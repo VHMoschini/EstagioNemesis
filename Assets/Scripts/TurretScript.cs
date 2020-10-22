@@ -13,16 +13,31 @@ public class TurretScript : MonoBehaviour
     public GameObject muzzle;
     //Life vars
     public int currentLife;
-
+    public GameObject warningImage;
+    private float randomTime;
 
     void Start()
     {
+        randomTime = Random.Range(2f, 5f);
 
     }
 
 
     void Update()
     {
+        if (randomTime > 0)
+            randomTime -= Time.deltaTime;
+
+
+        if (randomTime > 0f && randomTime < 1f)
+        {
+            warningImage.SetActive(true);
+            warningImage.transform.LookAt(player.transform);
+        }else
+            warningImage.SetActive(false);
+
+
+
 
         if (!resting)
         {
@@ -32,10 +47,11 @@ public class TurretScript : MonoBehaviour
         if (canShoot)
         {
             StartCoroutine(Shoot());
-
         }
+            
 
-        if(currentLife <= 0)
+
+        if (currentLife <= 0)
         {
             Dead();
         }
@@ -44,7 +60,7 @@ public class TurretScript : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        yield return new WaitForSeconds(Random.Range(2f, 5f));
+        yield return new WaitForSeconds(randomTime);
         GameObject bulletInst = Instantiate(bullet, muzzle.transform.position, muzzle.transform.rotation);
         bulletInst.GetComponent<Rigidbody>().AddForce(turretHead.transform.forward * bulletVel, ForceMode.Impulse);
         StartCoroutine(Rest());
@@ -54,6 +70,7 @@ public class TurretScript : MonoBehaviour
     {
         resting = true;
         yield return new WaitForSeconds(Random.Range(1f, 2f));
+        randomTime = Random.Range(2f, 5f);
         canShoot = true;
         resting = false;
 
