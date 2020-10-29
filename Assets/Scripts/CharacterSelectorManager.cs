@@ -18,7 +18,13 @@ public class CharacterSelectorManager : MonoBehaviour
 	private bool manualMove;
 	private float oldMousePosition;
 
-    void Start()
+
+	private void OnEnable()
+	{
+		manualMove = false;
+	}
+
+	void Start()
     {/*
         for (int i = 0; i < characters.Count; i++)
         {
