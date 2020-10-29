@@ -12379,6 +12379,12 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 2172893192213339295}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1243699917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996185800561908206, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+    type: 3}
+  m_PrefabInstance: {fileID: 193730920986547843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1260315576 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6929869538044923354, guid: 42f35ba389e0a6c44a781edbe3c04e82,
@@ -14901,6 +14907,16 @@ PrefabInstance:
       propertyPath: playerCharacterManager
       value: 
       objectReference: {fileID: 5972639141588859917}
+    - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
+        type: 3}
+      propertyPath: zeroBulletHighlight
+      value: 
+      objectReference: {fileID: 1243699917}
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: m_LocalPosition.x

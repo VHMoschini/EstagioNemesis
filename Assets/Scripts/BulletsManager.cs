@@ -12,6 +12,7 @@ public class BulletsManager : MonoBehaviour
 
     public Bullet[] bullets;
     public TMP_Text bulletText;
+	public GameObject zeroBulletHighlight;
     private int index;
     public PlayerCharacterManager playerCharacterManager;
 
@@ -21,11 +22,13 @@ public class BulletsManager : MonoBehaviour
         {
             bullets[i].currentBulletNum = bullets[i].maxBulletNum;
         }
+		zeroBulletHighlight.SetActive(false);
     }
 
     private void Update()
     {
         bulletText.text = bullets[playerCharacterManager.selectedBullet].currentBulletNum + "/" + bullets[playerCharacterManager.selectedBullet].maxBulletNum;
+		zeroBulletHighlight.SetActive(bullets[playerCharacterManager.selectedBullet].currentBulletNum == 0);
 
 
 		int emptyBullets = 0;
