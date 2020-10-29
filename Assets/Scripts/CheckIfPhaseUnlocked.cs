@@ -7,15 +7,12 @@ public class CheckIfPhaseUnlocked : MonoBehaviour
 {
     public bool isLocked;
     public GameObject lockedIcon;
+	public GameObject openLevel;
 
     // Update is called once per frame
     void Update()
     {
-        if (isLocked == true)
-        {
-            lockedIcon.SetActive(true);
-        }
-        else
-            lockedIcon.SetActive(false);
-    }
+		lockedIcon.SetActive(isLocked);
+		openLevel.SetActive(!isLocked);
+	}
 }

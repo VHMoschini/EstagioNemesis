@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mapa3.unity
     guid: 7d9b2cdbff9fe6e4c922e06f5b2885d1
+  - enabled: 1
+    path: Assets/Scenes/FaseBonus.unity
+    guid: d0e41c6aadcfcc64f95e18ae4846586f
   m_configObjects: {}
