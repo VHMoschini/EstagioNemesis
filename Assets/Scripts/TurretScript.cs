@@ -15,6 +15,7 @@ public class TurretScript : MonoBehaviour
     public int currentLife;
     public GameObject warningImage;
     private float randomTime;
+	public GameObject destroyedTowerPrefab;
 
     void Start()
     {
@@ -84,6 +85,7 @@ public class TurretScript : MonoBehaviour
 
     public void Dead()
     {
+		Instantiate(destroyedTowerPrefab, transform.position, Quaternion.identity, null);
         Destroy(gameObject);
     }
 }

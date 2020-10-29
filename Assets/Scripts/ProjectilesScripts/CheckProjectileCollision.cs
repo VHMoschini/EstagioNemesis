@@ -22,10 +22,12 @@ public class CheckProjectileCollision : MonoBehaviour
         else if (collision.gameObject.GetComponent<TurretScript>())
         {
             collision.gameObject.GetComponent<TurretScript>().TakeDamage(damageToDo);
-        }
+			CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
+		}
         else if (collision.gameObject.GetComponent<EnemyAttack>())
         {
             collision.gameObject.GetComponent<EnemyAttack>().TakeDamage(damageToDo);
-        }
+			CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
+		}
     }
 }

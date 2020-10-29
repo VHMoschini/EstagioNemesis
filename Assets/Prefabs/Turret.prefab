@@ -137,6 +137,8 @@ MonoBehaviour:
   muzzle: {fileID: 7122974651029502577}
   currentLife: 10
   warningImage: {fileID: 7053123655040227167}
+  destroyedTowerPrefab: {fileID: 3276285724713815535, guid: 8030815782bb6104ba7de83a69e0e736,
+    type: 3}
 --- !u!65 &7858282191817246946
 BoxCollider:
   m_ObjectHideFlags: 0
