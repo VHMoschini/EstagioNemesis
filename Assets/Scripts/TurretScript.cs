@@ -37,9 +37,6 @@ public class TurretScript : MonoBehaviour
         }else
             warningImage.SetActive(false);
 
-
-
-
         if (!resting)
         {
             var q = Quaternion.LookRotation(player.position + Vector3.up*2 - turretHead.transform.position);
@@ -64,6 +61,10 @@ public class TurretScript : MonoBehaviour
         yield return new WaitForSeconds(randomTime);
         GameObject bulletInst = Instantiate(bullet, muzzle.transform.position, muzzle.transform.rotation);
         bulletInst.GetComponent<Rigidbody>().AddForce(turretHead.transform.forward * bulletVel, ForceMode.Impulse);
+        if (GetComponent<AudioSource>())
+        {
+            GetComponent<AudioSource>().Play();
+        }
         StartCoroutine(Rest());
     }
 

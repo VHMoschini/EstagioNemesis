@@ -13122,9 +13122,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 590689860446842333, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 590689860446842333, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5972639141588859917}
+    - target: {fileID: 590689860446842333, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ChangeVisualBulletsButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 590689860446842333, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 590689860446842333, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1279067569921115241, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

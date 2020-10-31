@@ -17,7 +17,8 @@ public class BombProjectile : MonoBehaviour
             Instantiate(explosionEffects, transform.position, transform.rotation);
 			CameraShakeHandler.Instance.ShakeCamera(CameraShakeAmplitude, CameraShakeTime);
 			GetComponent<SphereCollider>().enabled = true;
-            Destroy(gameObject, 0.1f);
+            GetComponent<MeshRenderer>().enabled = false;
+            Destroy(gameObject, 1f);
             hitted = true;
         }
     }

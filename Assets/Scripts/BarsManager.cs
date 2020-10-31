@@ -91,7 +91,10 @@ public class BarsManager : MonoBehaviour
         {
             GameObject turretInst = Instantiate(turret, turretPlaces[i].position, turretPlaces[i].rotation);
             turretInst.GetComponentInChildren<TurretScript>().player = player.transform;
-
+            if (GetComponent<AudioSource>())
+            {
+                GetComponent<AudioSource>().Play();
+            }
         }
     }
 

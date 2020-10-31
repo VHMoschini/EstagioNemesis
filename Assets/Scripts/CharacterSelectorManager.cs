@@ -54,19 +54,27 @@ public class CharacterSelectorManager : MonoBehaviour
                 characters[i].gameObject.SetActive(false);
         }*/
 
-        if(index == characters.Count-1)
+        if (index == characters.Count - 1)
         {
             rightButton.sprite = rightArrowFalse;
-        }else
-			rightButton.sprite = rightArrow;
+            rightButton.GetComponent<Button>().enabled = false; //p n tocar som
+        }
+        else
+        {
+            rightButton.sprite = rightArrow;
+            rightButton.GetComponent<Button>().enabled = true;
+        }
 
-
-        if(index == 0)
+        if (index == 0)
         {
             leftButton.sprite = leftArrowFalse;
-		}
+            leftButton.GetComponent<Button>().enabled = false;
+        }
         else
+        {
             leftButton.sprite = leftArrow;
+            leftButton.GetComponent<Button>().enabled = true;
+        }
 
 
         PlayerPrefs.SetInt("playerIndex", index);

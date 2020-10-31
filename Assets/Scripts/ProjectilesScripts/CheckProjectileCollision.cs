@@ -13,6 +13,11 @@ public class CheckProjectileCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (GetComponent<AudioSource>() && !GetComponent<AudioSource>().isPlaying)
+        {
+            Debug.Log("tocou");
+            GetComponent<AudioSource>().Play();
+        }
         if (collision.gameObject.GetComponent<EnemyCube>())
         {
 			//barsManager.hittedEnemieCubes++;
