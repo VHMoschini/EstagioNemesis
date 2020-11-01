@@ -740,12 +740,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f35ba389e0a6c44a781edbe3c04e82, type: 3}
---- !u!1 &182684002 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5996185800561908206, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+--- !u!114 &182684002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1398941267515698921, guid: 42f35ba389e0a6c44a781edbe3c04e82,
     type: 3}
   m_PrefabInstance: {fileID: 182684001}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &420659401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,12 +1188,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000051330417
+      value: -0.000000034447734
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010099683
+      value: 0.000000006777874
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -1932,12 +1938,12 @@ PrefabInstance:
     - target: {fileID: 2172893192968839644, guid: 2ae605c3b4fbdde49b59cf26a331e073,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000005977176
+      value: -0.000000026006386
       objectReference: {fileID: 0}
     - target: {fileID: 2172893192968839644, guid: 2ae605c3b4fbdde49b59cf26a331e073,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000011760587
+      value: 0.0000000051169717
       objectReference: {fileID: 0}
     - target: {fileID: 2172893192968839644, guid: 2ae605c3b4fbdde49b59cf26a331e073,
         type: 3}
