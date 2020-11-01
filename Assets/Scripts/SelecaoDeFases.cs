@@ -7,7 +7,13 @@ public class SelecaoDeFases : MonoBehaviour
 {
     public AudioSource audioSource;
 
-    public void VaiPraFase(int numero)
+	private void Start()
+	{
+		StopAllCoroutines();
+		Time.timeScale = 1;
+	}
+
+	public void VaiPraFase(int numero)
     {
             SceneManager.LoadScene(numero);
     }

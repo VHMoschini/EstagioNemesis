@@ -86,6 +86,7 @@ public class PlayerCharacterManager : MonoBehaviour
 
 	public IEnumerator NoMoreBullets()
 	{
+		dead = true;
 		yield return new WaitForSeconds(5);
 		if (barsManager.sawText)
 		{
