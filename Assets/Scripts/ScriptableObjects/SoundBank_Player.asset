@@ -16,23 +16,23 @@ MonoBehaviour:
     audioClip:
     - {fileID: 8300000, guid: a0c170aa7ce24404c9df6bf964fa6355, type: 3}
     - {fileID: 8300000, guid: 93e18432054641c429d0461bea6e0385, type: 3}
-    volume: 0.5
+    volume: 1
   shot2:
     audioClip:
     - {fileID: 8300000, guid: 9f2461d255c042145a05cc1b892422b4, type: 3}
-    volume: 0.5
+    volume: 1
   shot3:
     audioClip:
     - {fileID: 8300000, guid: 4a3ae1f3d49a4914d8292e4afa13ccbe, type: 3}
-    volume: 0.5
+    volume: 1
   takeDamage:
     audioClip:
     - {fileID: 8300000, guid: c460c74edcb9bc74596b3f1f3b1934b7, type: 3}
-    volume: 0.5
+    volume: 1
   droneFail:
     audioClip:
     - {fileID: 8300000, guid: c76169d2457e330488bb1c2711a1c8a5, type: 3}
-    volume: 0.8
+    volume: 1
   defeatFanfarre:
     audioClip:
     - {fileID: 8300000, guid: e875be8ea6c579d439b5eb57e35afc14, type: 3}
