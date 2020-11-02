@@ -13708,7 +13708,7 @@ PrefabInstance:
     - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: bullets.Array.data[0].maxBulletNum
-      value: 20
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
@@ -13877,7 +13877,7 @@ PrefabInstance:
     - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
         type: 3}
       propertyPath: turretPlaces.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
         type: 3}
@@ -13929,7 +13929,7 @@ PrefabInstance:
         type: 3}
       propertyPath: turretPlaces.Array.data[3]
       value: 
-      objectReference: {fileID: 1966238548}
+      objectReference: {fileID: 0}
     - target: {fileID: 4796247812728379207, guid: 04dadc28675d1964484fb9758a248a1a,
         type: 3}
       propertyPath: lifeBar
@@ -15495,33 +15495,3 @@ Transform:
   m_Father: {fileID: 101260648}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1966238547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1966238548}
-  m_Layer: 0
-  m_Name: turretSpawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1966238548
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966238547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8563882, y: 0, z: -7.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -212,6 +212,11 @@ PrefabInstance:
       propertyPath: zeroBulletHighlight
       value: 
       objectReference: {fileID: 1859563531}
+    - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
+        type: 3}
+      propertyPath: bullets.Array.data[1].maxBulletNum
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -648,12 +653,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000025909014
+      value: -0.000000059547958
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000055891674
+      value: 0.0000000128458595
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
