@@ -9,6 +9,14 @@ public class PhasesManager : MonoBehaviour
 	public List<Image> buttonImages = new List<Image>();
 	public List<Sprite> imageSprites = new List<Sprite>();
 
+	private void Start()
+	{
+		if (!(PlayerPrefs.GetInt("LastPhaseUnlocked") > 2))
+		{
+			PlayerPrefs.SetInt("LastPhaseUnlocked", 2); //ajustar aqui qual a primeira fase liberada
+		}
+	}
+
 	void Update()
     {
         for (int i = 0; i < phasesButtons.Count; i++)
