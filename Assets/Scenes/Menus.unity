@@ -643,7 +643,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 16.4, y: 0}
+  m_AnchoredPosition: {x: 16.399994, y: 0}
   m_SizeDelta: {x: 66.53662, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &134616596
@@ -904,6 +904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222101633}
   - component: {fileID: 222101634}
+  - component: {fileID: 222101635}
   m_Layer: 5
   m_Name: Slider (1)
   m_TagString: Untagged
@@ -996,6 +997,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &222101635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222101632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 912.6461, y: 97.50351, z: 49.282173}
+  m_Center: {x: 5.2980623, y: -3.8582742, z: 24.522177}
 --- !u!1 &242339763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3234,6 +3248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 965288164}
   - component: {fileID: 965288165}
+  - component: {fileID: 965288166}
   m_Layer: 5
   m_Name: Slider (2)
   m_TagString: Untagged
@@ -3326,6 +3341,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &965288166
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965288163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 912.6461, y: 97.50351, z: 49.282173}
+  m_Center: {x: 5.2980623, y: -3.8582742, z: 24.522177}
 --- !u!1 &1009947676
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,7 +4476,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 16.4, y: 0}
+  m_AnchoredPosition: {x: 16.399994, y: 0}
   m_SizeDelta: {x: 66.53662, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1377094422
@@ -4829,8 +4857,8 @@ MonoBehaviour:
   - {fileID: 580160353472201117, guid: 32060c20c233b4e4788b82efcac7e695, type: 3}
   - {fileID: 580160353472201117, guid: 32060c20c233b4e4788b82efcac7e695, type: 3}
   imageExpand: {fileID: 1903832308}
-  imageSizex: 200
-  imageSizey: 600
+  imageSizex: 20
+  imageSizey: 60
   spaceBetweenImagesx: 250
   spaceBetweenImagesy: 350
   maxImagesPerLine: 4
@@ -5003,7 +5031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 16.4, y: 0}
+  m_AnchoredPosition: {x: 16.399994, y: 0}
   m_SizeDelta: {x: 66.53662, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595355625
@@ -5111,9 +5139,9 @@ Canvas:
   m_GameObject: {fileID: 1603938173}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1422687795}
+  m_PlaneDistance: 150
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -6977,32 +7005,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1825117544
-BoxCollider2D:
+--- !u!65 &1825117544
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825117542}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -5.51709, y: -60.760254}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1244.1738, y: 2032.4009}
-  m_EdgeRadius: 0
+  m_Size: {x: 1175.0734, y: 2008.1746, z: 64.434265}
+  m_Center: {x: 6.9105062, y: 10.7181635, z: 54.018646}
 --- !u!114 &1825117545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8231,6 +8246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2112223710}
   - component: {fileID: 2112223711}
+  - component: {fileID: 2112223712}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -8323,6 +8339,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &2112223712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112223709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 912.6461, y: 97.50351, z: 49.282173}
+  m_Center: {x: 5.2980623, y: -3.8582742, z: 24.522177}
 --- !u!1001 &1151240814985562645
 PrefabInstance:
   m_ObjectHideFlags: 0
