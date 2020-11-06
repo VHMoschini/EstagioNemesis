@@ -12,7 +12,7 @@ public class TurretBulletScript : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>())
         {
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
-            Destroy(gameObject, .5f);
+            Destroy(gameObject);
         }
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5143239140426109070}
   - component: {fileID: 8873148735529863996}
   m_Layer: 0
-  m_Name: SACERDOTISA
+  m_Name: Elsibon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,8 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageExpand: {fileID: 0}
   lockedImage: {fileID: 21300000, guid: b75a920c6e9468643b95c6b815f46f45, type: 3}
-  unlockedImage: {fileID: 21300000, guid: faa73e45b55981846a7ba5b71bfcc545, type: 3}
-  cardId: 2
+  unlockedImage: {fileID: 21300000, guid: de0519d063ddfe44381de05ead7f1d4f, type: 3}
+  cardId: 1
 --- !u!114 &8873148735529863996
 MonoBehaviour:
   m_ObjectHideFlags: 0

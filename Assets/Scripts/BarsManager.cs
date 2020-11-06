@@ -46,6 +46,7 @@ public class BarsManager : MonoBehaviour
                 {
                     StartCoroutine(ShowText());
                     PlayerPrefs.SetInt("LastPhaseUnlocked", 2);
+                    PlayerPrefs.SetInt("cards", 1);
                     goToNextPhaseButton.SetActive(true);
                     sawText = true;
                 }
@@ -62,6 +63,7 @@ public class BarsManager : MonoBehaviour
                 {
                     StartCoroutine(ShowText());
                     PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
+                    PlayerPrefs.SetInt("cards", 2);
                     goToNextPhaseButton.SetActive(true);
                     sawText = true;
 
