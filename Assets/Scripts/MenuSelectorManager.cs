@@ -27,7 +27,7 @@ public class MenuSelectorManager : MonoBehaviour
 	{
 		if (!manualMove)
 		{
-			panels.transform.localPosition = Vector3.Lerp(panels.transform.localPosition, -individualPanel[index].transform.localPosition, 0.2f);
+			panels.transform.localPosition = Vector3.Lerp(panels.transform.localPosition, new Vector3(-individualPanel[index].transform.localPosition.x, panels.transform.position.y, panels.transform.position.x), 0.2f);
 		}
 
 		for (int i = 0; i < buttons.Length; i++)
