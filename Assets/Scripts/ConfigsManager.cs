@@ -14,9 +14,17 @@ public class ConfigsManager : MonoBehaviour
     public AudioMixer sfx;
     public AudioMixer music;
 
+    float valueSfx;
+    bool resultSfx;
+    float valueMusic;
+    bool resultMusic;
+
+
     void Start()
     {
-        
+        generalSoundSlider.value = AudioListener.volume;
+        GetSfxVolume();
+        GetSoundVolume();
     }
 
     // Update is called once per frame
@@ -26,5 +34,23 @@ public class ConfigsManager : MonoBehaviour
         sfx.SetFloat("VolumeMaster(SFX)", sfxSlider.value);
         music.SetFloat("VolumeSounds", musicSlider.value);
 
+    }
+
+    private void GetSfxVolume()
+    {
+        resultSfx = sfx.GetFloat("VolumeMaster(SFX)", out valueSfx);
+        if (resultSfx)
+        {
+            sfxSlider.value = valueSfx;
+        }
+    }
+
+    private void GetSoundVolume()
+    {
+        resultMusic = music.GetFloat("VolumeSounds", out valueMusic);
+        if (resultMusic)
+        {
+            musicSlider.value = valueMusic;
+        }
     }
 }
