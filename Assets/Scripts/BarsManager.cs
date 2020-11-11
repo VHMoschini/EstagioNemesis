@@ -80,7 +80,8 @@ public class BarsManager : MonoBehaviour
                 else if (heroSnakeBar.fillAmount >= 0.7 && !sawText)
                 {
                     StartCoroutine(ShowText());
-                    sawText = true;
+					PlayerPrefs.SetInt("LastPhaseUnlocked", 4);
+					sawText = true;
                 }
                 break;
         }
