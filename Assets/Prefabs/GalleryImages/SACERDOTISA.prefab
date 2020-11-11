@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: faa73e45b55981846a7ba5b71bfcc545, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 65dcfe17da745414d8a5a54baae86fdc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageExpand: {fileID: 0}
   lockedImage: {fileID: 21300000, guid: b75a920c6e9468643b95c6b815f46f45, type: 3}
-  unlockedImage: {fileID: 21300000, guid: faa73e45b55981846a7ba5b71bfcc545, type: 3}
+  unlockedImage: {fileID: 21300000, guid: 65dcfe17da745414d8a5a54baae86fdc, type: 3}
   cardId: 2
 --- !u!114 &8873148735529863996
 MonoBehaviour:

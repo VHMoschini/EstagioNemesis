@@ -27,7 +27,7 @@ public class MenuSelectorManager : MonoBehaviour
 	{
 		if (!manualMove)
 		{
-			panels.transform.localPosition = Vector3.Lerp(panels.transform.localPosition, new Vector3(-individualPanel[index].transform.localPosition.x, panels.transform.position.y, panels.transform.position.x), 0.2f);
+			panels.transform.localPosition = Vector3.Lerp(panels.transform.localPosition, new Vector3(-individualPanel[index].transform.localPosition.x, panels.transform.localPosition.y, panels.transform.localPosition.z), 0.2f);
 		}
 
 		for (int i = 0; i < buttons.Length; i++)
@@ -48,7 +48,7 @@ public class MenuSelectorManager : MonoBehaviour
 	{
 		if (!stopMoving)
 		{
-			panels.transform.localPosition -= new Vector3(oldMousePosition - Input.mousePosition.x, 0, 0) * 2;
+			panels.transform.localPosition -= new Vector3(oldMousePosition - Input.mousePosition.x, 0, 0) * 1.3f;
 		}
 		oldMousePosition = Input.mousePosition.x;
 		manualMove = true;
