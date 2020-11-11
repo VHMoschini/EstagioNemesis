@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
         isAiming = true;
         if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
-            bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), transform.rotation);
+            bulletInst = Instantiate(projectile, aim.transform.position + (transform.forward * 2), aim.transform.rotation);
             bulletInst.transform.SetParent(transform);
             bulletInst.GetComponent<Rigidbody>().isKinematic = true;
         }
@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
     {
         if (bulletsManager.bullets[selectedBullet].currentBulletNum > 0)
         {
-            PlotTrajectory(aim.transform.position + (transform.forward * 2), (transform.rotation * new Vector3(throwXDir, throwYDir, 1)) * throwForce, 0.02f, 5f);
+            PlotTrajectory(aim.transform.position + (transform.forward * 2), (aim.transform.rotation * new Vector3(throwXDir, throwYDir, 1)) * throwForce, 0.02f, 5f);
         }
     }
 
