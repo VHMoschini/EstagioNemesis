@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageExpand: {fileID: 0}
-  lockedImage: {fileID: 21300000, guid: b75a920c6e9468643b95c6b815f46f45, type: 3}
+  lockedImage: {fileID: 21300000, guid: 3217ca36bc75ead4f86644196479a63c, type: 3}
   unlockedImage: {fileID: 21300000, guid: 65dcfe17da745414d8a5a54baae86fdc, type: 3}
   cardId: 2
 --- !u!114 &8873148735529863996
