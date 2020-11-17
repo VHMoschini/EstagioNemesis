@@ -2249,6 +2249,7 @@ GameObject:
   - component: {fileID: 4494799015183897736}
   - component: {fileID: 8806328454385592746}
   - component: {fileID: 8688989082544278918}
+  - component: {fileID: 7683662667366600550}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2303,12 +2304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-    elementum tempus mattis. '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f651b9121f1e494e85b2eb54bb5a9e3, type: 2}
   m_sharedMaterial: {fileID: 2979433491367818121, guid: 2f651b9121f1e494e85b2eb54bb5a9e3,
@@ -2336,7 +2332,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2372,12 +2368,26 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 29.554108, y: 265.27277, z: 53.069946, w: 362.34125}
+  m_margin: {x: 29.554108, y: 244.17377, z: 41.358276, w: 228.96283}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7683662667366600550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960683615166983499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bd8f505ae7c35429fa6930510a9041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barsManager: {fileID: 0}
+  panelTXT: {fileID: 0}
 --- !u!1 &2024668291249071804
 GameObject:
   m_ObjectHideFlags: 0
@@ -5101,6 +5111,7 @@ GameObject:
   - component: {fileID: 8849076223290109204}
   - component: {fileID: 7891735686106868674}
   - component: {fileID: 6644722035486456483}
+  - component: {fileID: 2715950244172844542}
   m_Layer: 5
   m_Name: DerrotaPanel
   m_TagString: Untagged
@@ -5170,6 +5181,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2715950244172844542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4076680570021977823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bd8f505ae7c35429fa6930510a9041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barsManager: {fileID: 0}
+  panelTXT: {fileID: 5456772539171543147}
 --- !u!1 &4087289590639788109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5824,7 +5849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3514206380924349601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9710,6 +9735,7 @@ GameObject:
   - component: {fileID: 5170444453446094102}
   - component: {fileID: 8387546846992015667}
   - component: {fileID: 4627612115968053791}
+  - component: {fileID: 2919012078367290787}
   m_Layer: 5
   m_Name: VitoriaPanel
   m_TagString: Untagged
@@ -9778,6 +9804,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2919012078367290787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611481881114398595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4bd8f505ae7c35429fa6930510a9041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  barsManager: {fileID: 0}
+  panelTXT: {fileID: 8688989082544278918}
 --- !u!1 &8630804961741192885
 GameObject:
   m_ObjectHideFlags: 0
