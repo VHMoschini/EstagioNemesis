@@ -61,11 +61,13 @@ public class CharacterSelectorManager : MonoBehaviour
 
 	public void RightArrow()
     {
+		if(index < characters.Count - 1)
         index++;
     }
 
     public void LeftArrow()
     {
+		if(index > 0)
         index--;
     }
 }
