@@ -9,20 +9,32 @@ public class TutorialManager : MonoBehaviour
     private int index = 0;
     public Image image;
 
+	private GameObject tutorialObject;
+
     private void Awake()
     {
-        //if (PlayerPrefs.GetInt("Tutorial") == 0)
-        //{
-        //    gameObject.SetActive(true);
-        //}
-        //else
-        //    gameObject.SetActive(false);
+		tutorialObject = transform.GetChild(0).gameObject;
+
+        if (PlayerPrefs.GetInt("Tutorial") == 0)
+        {
+            tutorialObject.SetActive(true);
+        }
+        else
+            tutorialObject.SetActive(false);
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        image.sprite = tutorial[index];
+		if (index >= tutorial.Count - 1)
+		{
+			image.sprite = tutorial[index];
+		}
+		else
+		{
+			PlayerPrefs.SetInt("Tutorial", 1);
+			tutorialObject.SetActive(false);
+		}
     }
 
 
@@ -40,7 +52,7 @@ public class TutorialManager : MonoBehaviour
 
     public void Skip()
     {
-        gameObject.SetActive(false);
+        tutorialObject.SetActive(false);
         PlayerPrefs.SetInt("Tutorial", 1);
         index = 0;
     }
