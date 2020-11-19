@@ -503,7 +503,7 @@ PrefabInstance:
     - target: {fileID: 7896749888565599098, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
       propertyPath: bullets.Array.data[1].maxBulletNum
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7896749888565599099, guid: 174bda60c29e32346b234f4479e2d161,
         type: 3}
