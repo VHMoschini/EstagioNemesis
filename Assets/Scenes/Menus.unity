@@ -5916,8 +5916,8 @@ MonoBehaviour:
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
     odio nec arcu eleifend molestie vel eleifend augue. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f651b9121f1e494e85b2eb54bb5a9e3, type: 2}
-  m_sharedMaterial: {fileID: 2979433491367818121, guid: 2f651b9121f1e494e85b2eb54bb5a9e3,
+  m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
+  m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -5942,7 +5942,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 64.25
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5978,7 +5978,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -208.69734, z: -296.06262, w: -139.83363}
+  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7085,13 +7085,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Com El Sibon iniciamos. Chap\xE9u, longa capa.. n\xE3o sabe nem seu rosto...
-    mist\xE9rio...\nEl Sibon domina importante \xE1rea de planta\xE7\xE3o. Gentes
-    morrem por causa de El Sibon. Cada morte \xE9 pr\xEAmio que carrega.\nPiores
-    podem acontecer, intervir \xE9 necess\xE1rio"
+  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
+    odio nec arcu eleifend molestie vel eleifend augue. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f651b9121f1e494e85b2eb54bb5a9e3, type: 2}
-  m_sharedMaterial: {fileID: 2979433491367818121, guid: 2f651b9121f1e494e85b2eb54bb5a9e3,
+  m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
+  m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7116,7 +7114,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.4
+  m_fontSize: 64.25
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7152,7 +7150,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -313.94995, z: -296.06262, w: -251.95052}
+  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8896,8 +8894,8 @@ MonoBehaviour:
   m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
     odio nec arcu eleifend molestie vel eleifend augue. '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2f651b9121f1e494e85b2eb54bb5a9e3, type: 2}
-  m_sharedMaterial: {fileID: 2979433491367818121, guid: 2f651b9121f1e494e85b2eb54bb5a9e3,
+  m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
+  m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8922,7 +8920,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 64.25
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8958,7 +8956,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -208.69734, z: -296.06262, w: -139.83363}
+  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
