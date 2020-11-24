@@ -5347,6 +5347,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 38.420288
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 46845e6230c2f174a81b89e6a8b21cfb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a7a54833c2a4974584550544dfdac12, type: 2}
     - target: {fileID: 919132149155446097, guid: 46845e6230c2f174a81b89e6a8b21cfb,
         type: 3}
       propertyPath: m_Name
@@ -5442,6 +5447,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: nave
       objectReference: {fileID: 0}
+    - target: {fileID: 1170970068873931921, guid: 1099c286641439e4ba520efda7eea98e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9bbd3daa5e8d434c87d91188f943eac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1099c286641439e4ba520efda7eea98e, type: 3}
 --- !u!4 &6953990269095075251 stripped
