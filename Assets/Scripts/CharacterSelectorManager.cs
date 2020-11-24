@@ -31,7 +31,7 @@ public class CharacterSelectorManager : MonoBehaviour
 		manualMove = false;
 		scImage = selectedCharacterPortrait.GetComponent<Image>();
 		scRect = selectedCharacterPortrait.GetComponent<RectTransform>();
-
+		index = PlayerPrefs.GetInt("playerIndex", 0);
 		for (int i = 0; i < characters.Count; i++)
 		{
 			characterImages.Add(characters[i].transform.GetChild(0).GetComponent<Image>());
