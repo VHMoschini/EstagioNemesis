@@ -6034,8 +6034,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-    odio nec arcu eleifend molestie vel eleifend augue. '
+  m_text: "Ni Sacerdotisa chegamos. Insens\xEDvel e\r\ncruel, com comparsas dominou\r\nimportante
+    hidrel\xE9trica de Akupana.\r\nSacerdotiza adora ao Sol e acredita\r\nagradar
+    a ei com poder e for\xE7a.\r\nSubestimar n\xE3o devemos ei e su\u2019s\r\ncomparsas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
   m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
@@ -6063,7 +6064,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 44.4
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6099,7 +6100,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
+  m_margin: {x: -258.0442, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7206,8 +7207,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-    odio nec arcu eleifend molestie vel eleifend augue. '
+  m_text: "Com El Sibon iniciamos.\r\nChap\xE9u, longa capa... n\xE3o sabe bem\r\nseu
+    rosto... mist\xE9rio... El Sibon domina\r\nimportante posto de fronteira, negocia\r\nvivos.
+    Gentes morrem por causa de ei.\r\nCada morte \xE9 pr\xEAmio que carrega.\r\nPiores
+    podem acontecer, intervir \xE9\r\nnecess\xE1rio."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
   m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
@@ -7235,7 +7238,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 43.15
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7271,7 +7274,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
+  m_margin: {x: -258.0442, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7669,8 +7672,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 27}
-  m_SizeDelta: {x: 1030, y: 1820}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6775736382908186439
 CanvasRenderer:
@@ -8361,8 +8364,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 27}
-  m_SizeDelta: {x: 1030, y: 1820}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7123512971362394924
 GameObject:
@@ -8615,8 +8618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6, y: 27}
-  m_SizeDelta: {x: 1030, y: 1820}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7577852730729089351
 MonoBehaviour:
@@ -9012,8 +9015,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-    odio nec arcu eleifend molestie vel eleifend augue. '
+  m_text: "Continuamos com Matinta. H\xE1bil com\r\nprodutos qu\xEDmicos, podem danos\r\ngraves
+    causar, defenda-se. Matinta\r\ndomina planta\xE7\xE3o e laborat\xF3rio de\r\npesquisa
+    atrav\xE9s do medo\u2026 Matinta\r\ncarrega potentes armas de agrot\xF3xicos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da587453f4c266042bdc91e6d6e07538, type: 2}
   m_sharedMaterial: {fileID: 4420151609354873220, guid: da587453f4c266042bdc91e6d6e07538,
@@ -9041,7 +9045,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64.25
+  m_fontSize: 45.15
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9077,7 +9081,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -291.38083, y: -208.69734, z: -265.6371, w: -139.83363}
+  m_margin: {x: -258.0442, y: -208.69734, z: -265.6371, w: -139.83363}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
