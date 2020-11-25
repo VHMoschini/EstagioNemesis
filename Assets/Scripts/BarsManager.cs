@@ -116,7 +116,7 @@ public class BarsManager : MonoBehaviour
     IEnumerator ShowText()
     {
         nextPhaseUnlocked.gameObject.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
         nextPhaseUnlocked.gameObject.SetActive(false);
 
     }
