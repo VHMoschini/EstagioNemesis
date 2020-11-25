@@ -11,7 +11,9 @@ public class BarsManager : MonoBehaviour
     //barras de heroi/mercenario vars
     [HideInInspector] public int hittedEnemieCubes;
     [HideInInspector] public int hittedAllyCubes;
-    int fase;
+	[HideInInspector] public float[] enemyCubeProportion = new float[3];
+	[HideInInspector] public float[] allyCubeProportion = new float[3];
+	[HideInInspector] public int fase;
     public Image heroSnakeBar;
     public Image mercenarySnakeBar;
     //turret vars
@@ -28,7 +30,16 @@ public class BarsManager : MonoBehaviour
     void Start()
     {
         fase = SceneManager.GetActiveScene().buildIndex;
-    }
+
+		enemyCubeProportion[0] = (0.4975f / 100);
+		enemyCubeProportion[1] = (0.3891f / 100);
+		enemyCubeProportion[2] = (0.4237f / 100);
+
+		allyCubeProportion[0] = (2.56f / 100);
+		allyCubeProportion[1] = (3.03f / 100);
+		allyCubeProportion[2] = (3.22f / 100);
+
+	}
     void Update()
     {
         lifeBarFill.fillAmount = ((player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife*100f)/ player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife)/100f;
@@ -36,8 +47,8 @@ public class BarsManager : MonoBehaviour
         switch (fase)
         {
             case 2:
-                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4975f / 100);
-                mercenarySnakeBar.fillAmount = hittedAllyCubes * (2.56f / 100);
+                heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[0];
+                mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[0];
                 if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
                 {
                     CreateTurret();
@@ -52,9 +63,9 @@ public class BarsManager : MonoBehaviour
                 }
                 break;
             case 3:
-                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.3891f / 100);
-                mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.03f / 100);
-                if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
+				heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[1];
+				mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[1];
+				if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
                 {
                     CreateTurret();
                     hasSpawned = true;
@@ -70,9 +81,9 @@ public class BarsManager : MonoBehaviour
                 }
                 break;
             case 4:
-                heroSnakeBar.fillAmount = hittedEnemieCubes * (0.4237f / 100);
-                mercenarySnakeBar.fillAmount = hittedAllyCubes * (3.22f / 100);
-                if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
+				heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[2];
+				mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[2];
+				if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
                 {
                     CreateTurret();
                     hasSpawned = true;

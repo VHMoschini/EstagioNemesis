@@ -16,7 +16,7 @@ public class EndMapStatistics : MonoBehaviour
 
     public void SetVictoryPanelStatistics()
     {
-        panelTXT.text = "Blocos Inimigos Destruídos: " + barsManager.hittedEnemieCubes + "\n Blocos Aliados Destruídos: " + barsManager.hittedAllyCubes;
+        panelTXT.text = "Blocos Inimigos Destruídos: " + barsManager.hittedEnemieCubes * barsManager.enemyCubeProportion[barsManager.fase-2] * 100 + "%\n Blocos Aliados Destruídos: " + barsManager.hittedAllyCubes * barsManager.allyCubeProportion[barsManager.fase-2] * 100 + "%";
     }
 
 }
