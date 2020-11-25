@@ -96,6 +96,15 @@ public class BarsManager : MonoBehaviour
                 }
                 break;
         }
+
+		if (heroSnakeBar.fillAmount > mercenarySnakeBar.fillAmount)
+		{
+			heroSnakeBar.transform.SetSiblingIndex(3);
+		}
+		else
+		{
+			mercenarySnakeBar.transform.SetSiblingIndex(3);
+		}
     }
 
 
