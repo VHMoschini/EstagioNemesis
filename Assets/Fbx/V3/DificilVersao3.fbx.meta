@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: AliadoMat2
+    second: {fileID: 2100000, guid: 5f7f2220563908b4794f768621c20bfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FerroMat1
+    second: {fileID: 2100000, guid: 2e69b3ebd1811544f87379d674515f3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMat2
+    second: {fileID: 2100000, guid: 01e3e7c772d3e2b448eacddf0ddae496, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: PedraMat1
-    second: {fileID: 2100000, guid: 966dcc3ad3ac17e42b4bda8bed6d4c66, type: 2}
+    second: {fileID: 2100000, guid: 9eb58981775fb0e45be984ddaf267594, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

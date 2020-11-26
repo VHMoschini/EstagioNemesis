@@ -3,7 +3,17 @@ guid: e941849cdce3db04fa447ef77e634a73
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AliadoMat
+    second: {fileID: 2100000, guid: abe554d4eca2bf141b897e5286635de0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MadeiraMat
+    second: {fileID: 2100000, guid: d187173346f0cbb49963cb8723b31f0a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -7,6 +7,8 @@ using UnityEngine.Video;
 public class VideoManager : MonoBehaviour
 {
 	private VideoPlayer m_VideoPlayer;
+    public GameObject canvas;
+
 
 	void Awake()
 	{
@@ -17,7 +19,7 @@ public class VideoManager : MonoBehaviour
 	void OnMovieFinished(VideoPlayer player)
 	{
 		player.Stop();
-		SceneManager.LoadScene(1);
+        canvas.SetActive(true);
 		Destroy(gameObject);
 		
 	}
