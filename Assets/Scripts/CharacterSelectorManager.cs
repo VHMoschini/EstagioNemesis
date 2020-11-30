@@ -82,7 +82,7 @@ public class CharacterSelectorManager : MonoBehaviour
 
 	private void LateUpdate()
 	{
-		scRect.anchoredPosition = new Vector2(Mathf.Clamp(-transform.position.x * 10 + 47, 47, 1080 + 70), scRect.anchoredPosition.y);
+		scRect.anchoredPosition = new Vector2(Mathf.Clamp(-transform.position.x * 10 + Screen.width/23, Screen.width / 23, Screen.width + 70), scRect.anchoredPosition.y);
 	}
 
 	public void RightArrow()
