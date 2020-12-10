@@ -15,12 +15,12 @@ public class TutorialManager : MonoBehaviour
     {
 		tutorialObject = transform.GetChild(0).gameObject;
 
-        if (PlayerPrefs.GetInt("Tutorial") == 0)
-        {
-            tutorialObject.SetActive(true);
-        }
-        else
-            tutorialObject.SetActive(false);
+        //if (PlayerPrefs.GetInt("Tutorial") == 0)
+        //{
+        //    tutorialObject.SetActive(true);
+        //}
+        //else
+        //    tutorialObject.SetActive(false);
     }
 
     
