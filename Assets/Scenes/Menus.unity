@@ -2368,7 +2368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1128330173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2838,20 +2838,17 @@ PrefabInstance:
         type: 3}
       propertyPath: phasesButtons.Array.data[0]
       value: 
-      objectReference: {fileID: 1263054771099133607, guid: 4c949d7b97ea51e469b23d0f1cafc001,
-        type: 3}
+      objectReference: {fileID: 1263054770604890677}
     - target: {fileID: 1475020277447547945, guid: 9787bb3e3e1501046a341efa2fa51ce5,
         type: 3}
       propertyPath: phasesButtons.Array.data[1]
       value: 
-      objectReference: {fileID: 5225312055575495784, guid: 4c949d7b97ea51e469b23d0f1cafc001,
-        type: 3}
+      objectReference: {fileID: 5225312056224872698}
     - target: {fileID: 1475020277447547945, guid: 9787bb3e3e1501046a341efa2fa51ce5,
         type: 3}
       propertyPath: phasesButtons.Array.data[2]
       value: 
-      objectReference: {fileID: 7608310397459231966, guid: 4c949d7b97ea51e469b23d0f1cafc001,
-        type: 3}
+      objectReference: {fileID: 7608310395816265804}
     - target: {fileID: 1475020277447547946, guid: 9787bb3e3e1501046a341efa2fa51ce5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7501,6 +7498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OpenLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8168621553720002438, guid: 1d8387071e9748d46bc61fca32d11aa4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d8387071e9748d46bc61fca32d11aa4, type: 3}

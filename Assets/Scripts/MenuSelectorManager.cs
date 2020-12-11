@@ -19,7 +19,7 @@ public class MenuSelectorManager : MonoBehaviour
 
 	private void Start()
 	{
-		index = 1;
+		index = 0;
 		stopMoving = false;
 	}
 

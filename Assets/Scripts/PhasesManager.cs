@@ -11,9 +11,9 @@ public class PhasesManager : MonoBehaviour
 
 	private void Start()
 	{
-		if (!(PlayerPrefs.GetInt("LastPhaseUnlocked") > 2))
+		if (!(PlayerPrefs.GetInt("LastPhaseUnlocked") >= 1))
 		{
-			PlayerPrefs.SetInt("LastPhaseUnlocked", 2); //ajustar aqui qual a primeira fase liberada
+			PlayerPrefs.SetInt("LastPhaseUnlocked", 1); //ajustar aqui qual a primeira fase liberada
 		}
 	}
 
