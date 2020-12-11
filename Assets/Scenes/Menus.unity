@@ -377,13 +377,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cidade
+  m_text: AYA MARKA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: deb47c2f3c9feb04da3823a2a86d7e47, type: 2}
   m_sharedMaterial: {fileID: 4787567141027445369, guid: deb47c2f3c9feb04da3823a2a86d7e47,
@@ -393,7 +393,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1498,13 +1498,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cidade
+  m_text: MANA'U
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: deb47c2f3c9feb04da3823a2a86d7e47, type: 2}
   m_sharedMaterial: {fileID: 4787567141027445369, guid: deb47c2f3c9feb04da3823a2a86d7e47,
@@ -1778,8 +1778,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6775736382559451910}
-  - {fileID: 6996647155847318798}
   - {fileID: 7542949530734628292}
+  - {fileID: 6996647155847318798}
   - {fileID: 6775736382908186437}
   - {fileID: 604254403}
   m_Father: {fileID: 904632552}
@@ -2385,7 +2385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 279, y: 0}
+  m_AnchoredPosition: {x: 202, y: 0}
   m_SizeDelta: {x: 247, y: 504}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1128330174
@@ -2890,7 +2890,7 @@ PrefabInstance:
     - target: {fileID: 1475020277447547946, guid: 9787bb3e3e1501046a341efa2fa51ce5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1475020277447547946, guid: 9787bb3e3e1501046a341efa2fa51ce5,
         type: 3}
@@ -3012,7 +3012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03773582, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.15686275, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3148,7 +3148,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0, g: 0.15686275, b: 0.07450981, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3246,7 +3246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.15686275, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4734,13 +4734,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cidade
+  m_text: AKUPANA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: deb47c2f3c9feb04da3823a2a86d7e47, type: 2}
   m_sharedMaterial: {fileID: 4787567141027445369, guid: deb47c2f3c9feb04da3823a2a86d7e47,
@@ -4750,7 +4750,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -5837,6 +5837,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 286706052068906130, guid: 025bb22c3f5c86c40b87fe038e92c2e8,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 286706052068906130, guid: 025bb22c3f5c86c40b87fe038e92c2e8,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.07450981
       objectReference: {fileID: 0}
     - target: {fileID: 286706052068906131, guid: 025bb22c3f5c86c40b87fe038e92c2e8,
         type: 3}
@@ -7958,7 +7968,7 @@ RectTransform:
   m_GameObject: {fileID: 6775736382559451909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0069966, y: 1.0069966, z: 1.0069966}
+  m_LocalScale: {x: 1.0892682, y: 1.0892682, z: 1.0892682}
   m_Children:
   - {fileID: 7814652981752468575}
   - {fileID: 7629132630419573377}
@@ -7997,7 +8007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6924dce561ae8e54bbaad45f1acae84d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e2a3ea401eb21c4298b969c39d05768, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8289,7 +8299,7 @@ GameObject:
   - component: {fileID: 6775736382908186437}
   - component: {fileID: 6775736382908186439}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Aya Marka Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8610,7 +8620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -140, y: -80}
+  m_AnchoredPosition: {x: -150, y: -200}
   m_SizeDelta: {x: 132.93811, y: 130.8888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6775736383672410939
@@ -9006,7 +9016,7 @@ RectTransform:
   - {fileID: 4404366290105996073}
   - {fileID: 1726530647}
   m_Father: {fileID: 834161698}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9024,7 +9034,7 @@ GameObject:
   - component: {fileID: 7542949530734628292}
   - component: {fileID: 1212515304424196135}
   m_Layer: 5
-  m_Name: Panel (2)
+  m_Name: Akupana Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9261,7 +9271,7 @@ RectTransform:
   - {fileID: 3132143522909247241}
   - {fileID: 1559033370}
   m_Father: {fileID: 834161698}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9537,7 +9547,7 @@ GameObject:
   - component: {fileID: 6996647155847318798}
   - component: {fileID: 4143197671052872951}
   m_Layer: 5
-  m_Name: Panel (1)
+  m_Name: Mana u Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
