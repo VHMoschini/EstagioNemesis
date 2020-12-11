@@ -7,20 +7,24 @@ using UnityEngine.Video;
 public class VideoManager : MonoBehaviour
 {
 	private VideoPlayer m_VideoPlayer;
-    public GameObject canvas;
+    public GameObject menu;
 
 
-	void Awake()
+	private void Awake()
 	{
 		m_VideoPlayer = GetComponent<VideoPlayer>();
 		m_VideoPlayer.loopPointReached += OnMovieFinished;
 	}
 
-	void OnMovieFinished(VideoPlayer player)
+	private void OnMovieFinished(VideoPlayer player)
 	{
 		player.Stop();
-        canvas.SetActive(true);
+		menu.SetActive(true);
 		Destroy(gameObject);
-		
+	}
+
+	public void StopFilm()
+	{
+		OnMovieFinished(m_VideoPlayer);
 	}
 }
