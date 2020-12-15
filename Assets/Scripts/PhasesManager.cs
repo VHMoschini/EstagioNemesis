@@ -30,4 +30,10 @@ public class PhasesManager : MonoBehaviour
 	{
 		PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
 	}
+
+	public void ResetaSave()
+	{
+		PlayerPrefs.DeleteAll();
+		PlayerPrefs.SetInt("LastPhaseUnlocked", 1);
+	}
 }
