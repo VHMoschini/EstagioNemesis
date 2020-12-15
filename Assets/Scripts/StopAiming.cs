@@ -10,6 +10,7 @@ public class StopAiming : MonoBehaviour
 
 	private void Start()
 	{
+		stopaiming = transform.GetChild(0).gameObject;
 		stopaiming.SetActive(false);
 	}
 

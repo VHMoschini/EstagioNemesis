@@ -12,7 +12,7 @@ public class ParticleForceFieldPositioner : MonoBehaviour
 		originalParent = transform.parent.gameObject;
 		transform.position = Camera.main.ScreenToWorldPoint(originalParent.transform.position + Vector3.forward * 30);
 		player = FindObjectOfType<PlayerCharacterManager>().gameObject;
-		transform.parent = player.transform;
+		transform.SetParent(player.transform);
 	}
 
 	private void Update()

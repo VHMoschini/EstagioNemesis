@@ -25,4 +25,9 @@ public class PhasesManager : MonoBehaviour
 			buttonImages[i].sprite = (PlayerPrefs.GetInt("LastPhaseUnlocked") > i + 1) ? imageSprites[i] : buttonImages[i].sprite;
 		}
 	}
+
+	public void LiberaTerceiraFase()
+	{
+		PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
+	}
 }
