@@ -21,6 +21,7 @@ public class CharacterSelectorManager : MonoBehaviour
 	private float oldMousePosition;
 
 	public GameObject selectedCharacterPortrait;
+	public Transform levelsMenu;
 	private RectTransform scRect;
 	private Image scImage;
 
@@ -82,7 +83,16 @@ public class CharacterSelectorManager : MonoBehaviour
 
 	private void LateUpdate()
 	{
-		scRect.anchoredPosition = new Vector2(Mathf.Clamp(-transform.position.x * 10 + Screen.width/23, Screen.width / 23, Screen.width + 70), scRect.anchoredPosition.y);
+		if (MenuSelectorManager.instance.panels.transform.position.x >= 0)
+		{
+			selectedCharacterPortrait.transform.SetParent(transform.parent.parent.parent);
+		}
+		else
+		{
+			selectedCharacterPortrait.transform.SetParent(levelsMenu);
+			
+		}
+		scRect.anchoredPosition = Vector2.Lerp(scRect.anchoredPosition, new Vector2(46, -16), 0.5f);
 	}
 
 	public void RightArrow()

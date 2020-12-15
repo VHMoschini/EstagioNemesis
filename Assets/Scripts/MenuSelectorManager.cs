@@ -7,6 +7,7 @@ public class MenuSelectorManager : MonoBehaviour
 {
 	public List<GameObject> individualPanel = new List<GameObject>();
 	int index;
+	public static MenuSelectorManager instance;
 
 	public GameObject panels;
 	private bool manualMove;
@@ -17,6 +18,11 @@ public class MenuSelectorManager : MonoBehaviour
 	public Sprite[] buttonsOn;
 	public Sprite[] buttonsOff;
 
+	private void Awake()
+	{
+		if(instance == null)
+		instance = this;
+	}
 	private void Start()
 	{
 		index = 0;
@@ -62,7 +68,6 @@ public class MenuSelectorManager : MonoBehaviour
 			if (Vector3.Distance(individualPanel[i].transform.position, transform.position) < lastDist)
 			{
 				lastDist = Vector3.Distance(individualPanel[i].transform.position, transform.position);
-				Debug.Log(lastDist);
 				index = i;
 			}
 
