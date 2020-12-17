@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
@@ -15,7 +16,7 @@ public class TutorialManager : MonoBehaviour
     {
 		tutorialObject = transform.GetChild(0).gameObject;
 
-        //if (PlayerPrefs.GetInt("Tutorial") == 0)
+        //if (SceneManager.GetActiveScene().buildIndex == 2)
         //{
         //    tutorialObject.SetActive(true);
         //}
@@ -26,15 +27,16 @@ public class TutorialManager : MonoBehaviour
     
     void Update()
     {
-		if (index >= tutorial.Count - 1)
-		{
+		//if (index >= tutorial.Count - 1)
+		//{
 			image.sprite = tutorial[index];
-		}
-		else
-		{
-			PlayerPrefs.SetInt("Tutorial", 1);
-			tutorialObject.SetActive(false);
-		}
+        Time.timeScale = 0;
+		//}
+        //else
+        //{
+        //    //PlayerPrefs.SetInt("Tutorial", 1);
+        //    tutorialObject.SetActive(false);
+        //}
     }
 
 
@@ -53,7 +55,12 @@ public class TutorialManager : MonoBehaviour
     public void Skip()
     {
         tutorialObject.SetActive(false);
-        PlayerPrefs.SetInt("Tutorial", 1);
+        //PlayerPrefs.SetInt("Tutorial", 1);
         index = 0;
+    }
+
+    private void OnDisable()
+    {
+        Time.timeScale = 1;
     }
 }
