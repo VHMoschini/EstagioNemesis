@@ -22,7 +22,7 @@ public class PlayerCharacterManager : MonoBehaviour
     public Color[] colors;
 
 	
-	private GameObject playerInst;
+	[HideInInspector] public GameObject playerInst;
 	private PlayerController playerController;
 	private LineRenderer lineRenderer;
 

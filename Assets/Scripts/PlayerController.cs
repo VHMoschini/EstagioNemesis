@@ -35,8 +35,7 @@ public class PlayerController : MonoBehaviour
     {
         lineRenderer = GetComponent<LineRenderer>();
         audioSource = GetComponent<AudioSource>();
-
-        shouldMoveCamera.Value = true;
+		
         characterStats.currentLife = characterStats.maxLife;
         shouldShoot = true;
     }

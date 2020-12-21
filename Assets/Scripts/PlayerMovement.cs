@@ -14,14 +14,12 @@ public class PlayerMovement : MonoBehaviour
 	{
 		transform.parent = cam.transform;
 		transform.rotation = Quaternion.Euler(0, cam.transform.rotation.y, cam.transform.localRotation.z);
-		startingPos = transform.localPosition;
 	}
 
 	private void Update()
 	{
 		if (follow)
 		{
-			transform.parent = cam.transform;
 			transform.localPosition = Vector3.Lerp(transform.localPosition, startingPos, 0.5f);
 			transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.Euler(-17, 0, 0), 0.2f);
 		}
@@ -30,6 +28,12 @@ public class PlayerMovement : MonoBehaviour
 			transform.parent = null;
 		}	
 		
+	}
+
+	public void SetupPosition()
+	{
+		transform.parent = cam.transform;
+		startingPos = transform.localPosition;
 	}
 
 }
