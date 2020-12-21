@@ -9,41 +9,52 @@ public class TutorialManager : MonoBehaviour
     public List<Sprite> tutorial = new List<Sprite>();
     private int index = 0;
     public Image image;
+	public GameObject voltarButton;
 
 	private GameObject tutorialObject;
 
     private void Awake()
     {
 		tutorialObject = transform.GetChild(0).gameObject;
+		
+		//if (SceneManager.GetActiveScene().buildIndex == 2)
+		//{
+		//    tutorialObject.SetActive(true);
+		//}
+		//else
+		//    tutorialObject.SetActive(false);
+	}
 
-        //if (SceneManager.GetActiveScene().buildIndex == 2)
-        //{
-        //    tutorialObject.SetActive(true);
-        //}
-        //else
-        //    tutorialObject.SetActive(false);
-    }
+	private void Start()
+	{
+		Time.timeScale = 0;
+	}
 
-    
-    void Update()
+	void Update()
     {
 		//if (index >= tutorial.Count - 1)
 		//{
 			image.sprite = tutorial[index];
-        Time.timeScale = 0;
+		
+		voltarButton.SetActive(index > 0);
+
+		if(index < 2) Time.timeScale = 0;
+
 		//}
-        //else
-        //{
-        //    //PlayerPrefs.SetInt("Tutorial", 1);
-        //    tutorialObject.SetActive(false);
-        //}
-    }
+		//else
+		//{
+		//    //PlayerPrefs.SetInt("Tutorial", 1);
+		//    tutorialObject.SetActive(false);
+		//}
+	}
 
 
     public void Forward()
     {
-        if (index < tutorial.Count-1)
-            index++;
+		if (index < tutorial.Count - 1)
+			index++;
+		else
+			Skip();
     }
 
     public void Backward()
@@ -56,8 +67,9 @@ public class TutorialManager : MonoBehaviour
     {
         tutorialObject.SetActive(false);
         //PlayerPrefs.SetInt("Tutorial", 1);
-        index = 0;
-    }
+        //index = 0;
+		Time.timeScale = 1;
+	}
 
     private void OnDisable()
     {
