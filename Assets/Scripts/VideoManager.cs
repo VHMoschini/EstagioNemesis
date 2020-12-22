@@ -8,6 +8,7 @@ public class VideoManager : MonoBehaviour
 {
 	private VideoPlayer m_VideoPlayer;
     public GameObject menu;
+	public GameObject skipButton;
 
 
 	private void Awake()
@@ -20,6 +21,7 @@ public class VideoManager : MonoBehaviour
 	{
 		player.Stop();
 		menu.SetActive(true);
+		skipButton.SetActive(false);
 		Destroy(gameObject);
 	}
 
