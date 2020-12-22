@@ -3978,6 +3978,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 58cdeb7908ffa804e8f95e2ac16caf1a, type: 3}
   rightButton: {fileID: 1943347360}
   leftButton: {fileID: 547638103}
+  positiveSound: {fileID: 8300000, guid: 7c7274edfa70c454199af72538584974, type: 3}
+  negativeSound: {fileID: 8300000, guid: c460c74edcb9bc74596b3f1f3b1934b7, type: 3}
   rightArrow: {fileID: 21300000, guid: cfaf69a1a4c54fe4aaf0c9af7da7661e, type: 3}
   rightArrowFalse: {fileID: 21300000, guid: ad84edd43a48b0d4087b34bac044cef8, type: 3}
   leftArrow: {fileID: 21300000, guid: 0a31cceadf31cc549af2da4f3e1ff584, type: 3}

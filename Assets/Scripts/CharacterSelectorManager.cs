@@ -11,6 +11,14 @@ public class CharacterSelectorManager : MonoBehaviour
     int index;
     public Image rightButton;
     public Image leftButton;
+	public AudioClip positiveSound;
+	public AudioClip negativeSound;
+
+	private Button rightButtonButton;
+	private Button leftButtonButton;
+	private AudioSource rightButtonAudio;
+	private AudioSource leftButtonAudio;
+
 	public Sprite rightArrow;
 	public Sprite rightArrowFalse;
 	public Sprite leftArrow;
@@ -41,6 +49,11 @@ public class CharacterSelectorManager : MonoBehaviour
 				characterImages[i].sprite = characterSprites[i];
 			}
 		}
+
+	//	rightButtonButton = rightButton.GetComponent<Button>();
+	//	leftButtonButton = leftButton.GetComponent<Button>();
+		rightButtonAudio = rightButton.GetComponent<AudioSource>();
+		leftButtonAudio = leftButton.GetComponent<AudioSource>();
 	}
 
 	
@@ -54,24 +67,28 @@ public class CharacterSelectorManager : MonoBehaviour
         if (index == characters.Count - 1)
         {
             rightButton.sprite = rightArrowFalse;
-            rightButton.GetComponent<Button>().enabled = false; //p n tocar som
+			//rightButtonButton.enabled = false; //p n tocar som
+			rightButtonAudio.clip = negativeSound;
         }
         else
         {
             rightButton.sprite = rightArrow;
-            rightButton.GetComponent<Button>().enabled = true;
-        }
+           // rightButtonButton.enabled = true;
+			rightButtonAudio.clip = positiveSound;
+		}
 
         if (index == 0)
         {
             leftButton.sprite = leftArrowFalse;
-            leftButton.GetComponent<Button>().enabled = false;
-        }
+			//leftButtonButton.enabled = false;
+			leftButtonAudio.clip = negativeSound;
+		}
         else
         {
             leftButton.sprite = leftArrow;
-            leftButton.GetComponent<Button>().enabled = true;
-        }
+			//leftButtonButton.enabled = true;
+			leftButtonAudio.clip = positiveSound;
+		}
 
 
 		if (PlayerPrefs.GetInt("PersonagensLiberados", 0) >= index)

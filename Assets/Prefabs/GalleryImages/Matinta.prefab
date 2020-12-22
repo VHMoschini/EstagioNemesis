@@ -93,6 +93,8 @@ MonoBehaviour:
   imageExpand: {fileID: 0}
   lockedImage: {fileID: 21300000, guid: 3217ca36bc75ead4f86644196479a63c, type: 3}
   unlockedImage: {fileID: 21300000, guid: 4412345c5d186604389973d5bcf33bc4, type: 3}
+  positiveSound: {fileID: 8300000, guid: 7c7274edfa70c454199af72538584974, type: 3}
+  negativeSound: {fileID: 8300000, guid: c460c74edcb9bc74596b3f1f3b1934b7, type: 3}
   cardId: 2
 --- !u!114 &8873148735529863996
 MonoBehaviour:

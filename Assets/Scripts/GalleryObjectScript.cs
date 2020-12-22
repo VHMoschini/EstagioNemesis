@@ -9,6 +9,9 @@ public class GalleryObjectScript : MonoBehaviour
     private bool isUnlocked;
     public Sprite lockedImage;
     public Sprite unlockedImage;
+	public AudioClip positiveSound;
+	public AudioClip negativeSound;
+	private AudioSource audioSource;
     public int cardId;
 
 
@@ -16,12 +19,17 @@ public class GalleryObjectScript : MonoBehaviour
     private void Start()
     {
         imageExpand = GetComponentInParent<GalleryManager>().imageExpand;
-        if(PlayerPrefs.GetInt("cards") >= cardId)
-        {
-            isUnlocked = true;
-            GetComponent<Image>().sprite = unlockedImage;
-        }else
-            GetComponent<Image>().sprite = lockedImage;
+		if (PlayerPrefs.GetInt("cards") >= cardId)
+		{
+			isUnlocked = true;
+			GetComponent<Image>().sprite = unlockedImage;
+			GetComponent<AudioSource>().clip = positiveSound;
+		}
+		else
+		{
+			GetComponent<Image>().sprite = lockedImage;
+			GetComponent<AudioSource>().clip = negativeSound;
+		}
 
 
     }
