@@ -26,7 +26,8 @@ public class CameraShowoff : MonoBehaviour
 
 	private void Update()
 	{
-		TD.m_PathPosition += speed;
+		
+		TD.m_PathPosition += speed * Time.timeScale;
 
 		
 		if (TD.m_PathPosition > 3)

@@ -7,7 +7,7 @@ public class SelecaoDeFases : MonoBehaviour
 {
     public AudioSource audioSource;
 
-	private void Start()
+	private void Awake()
 	{
 		StopAllCoroutines();
 		Time.timeScale = 1;

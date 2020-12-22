@@ -38,7 +38,6 @@ public class TutorialManager : MonoBehaviour
 		
 		voltarButton.SetActive(index > 0);
 
-		if(index < 2) Time.timeScale = 0;
 
 		//}
 		//else
