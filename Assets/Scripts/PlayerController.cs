@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     public static bool isAiming;
     public static bool shouldShoot;
 
-    void Start()
+    void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
         audioSource = GetComponent<AudioSource>();

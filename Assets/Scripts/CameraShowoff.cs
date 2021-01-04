@@ -12,6 +12,8 @@ public class CameraShowoff : MonoBehaviour
 	private PlayerCharacterManager characterManager;
 	private PlayerMovement playerMovement;
 
+	public GameObject canvas;
+
 	public float speed;
 
 
@@ -44,6 +46,7 @@ public class CameraShowoff : MonoBehaviour
 			shouldMoveCamera.Value = true;
 			playerMovement.SetupPosition();
 			playerMovement.follow = true;
+			canvas.SetActive(true);
 			this.enabled = false;
 		}
 	}
