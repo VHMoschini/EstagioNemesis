@@ -92,6 +92,7 @@ public class BarsManager : MonoBehaviour
                 {
                     StartCoroutine(ShowText());
 					PlayerPrefs.SetInt("LastPhaseUnlocked", 4);
+					PlayerPrefs.SetInt("cards", 3);
 					sawText = true;
                 }
                 break;

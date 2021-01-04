@@ -15751,6 +15751,11 @@ PrefabInstance:
       propertyPath: barsManager
       value: 
       objectReference: {fileID: 694267752}
+    - target: {fileID: 3535608774897102712, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4677503476681931373, guid: 42f35ba389e0a6c44a781edbe3c04e82,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15985,6 +15990,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8611481881114398595, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8910673701692784771, guid: 42f35ba389e0a6c44a781edbe3c04e82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f35ba389e0a6c44a781edbe3c04e82, type: 3}
@@ -16445,12 +16460,12 @@ PrefabInstance:
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000059547958
+      value: -0.000000025909014
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000128458595
+      value: 0.0000000055891674
       objectReference: {fileID: 0}
     - target: {fileID: 1874333597926786469, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
