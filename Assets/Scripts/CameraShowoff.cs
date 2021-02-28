@@ -15,6 +15,9 @@ public class CameraShowoff : MonoBehaviour
 	public GameObject canvas;
 
 	public float speed;
+	private float quickSpeed;
+
+	public static bool quickShowoff;
 
 
 	private void Start()
@@ -24,6 +27,8 @@ public class CameraShowoff : MonoBehaviour
 		characterManager = GetComponent<PlayerCharacterManager>();
 		playerMovement = GetComponent<PlayerMovement>();
 		playerMovement.follow = false;
+		quickSpeed = speed * 5;
+		if (quickShowoff) speed = quickSpeed;
 	}
 
 	private void Update()
@@ -40,8 +45,10 @@ public class CameraShowoff : MonoBehaviour
 		if (TD.m_PathPosition > 4)
 		{
 			cam.Priority = 0;
+			speed = quickSpeed;
+			quickShowoff = true;
 		}
-		if (TD.m_PathPosition > 5f)
+		if (TD.m_PathPosition > 110f*quickSpeed)
 		{
 			shouldMoveCamera.Value = true;
 			playerMovement.SetupPosition();

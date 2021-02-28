@@ -19176,6 +19176,16 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1411043204}
+    - target: {fileID: 4096056569072729243, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: quickShowoff
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4096056569072729243, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: speed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
         type: 3}
       propertyPath: barsManager
