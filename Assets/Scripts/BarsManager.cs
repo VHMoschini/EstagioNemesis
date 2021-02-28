@@ -106,6 +106,11 @@ public class BarsManager : MonoBehaviour
 		{
 			mercenarySnakeBar.transform.SetSiblingIndex(3);
 		}
+
+		if (hittedEnemieCubes > 0 || hittedAllyCubes > 0)
+		{
+			HominhoWalk.isAfraid = true;
+		}
     }
 
 

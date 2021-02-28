@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wanderSpeed: 2
+  runSpeed: 6
+  distanceFromAbrigoToDespawn: 1.8
 --- !u!1 &858873041618292635
 GameObject:
   m_ObjectHideFlags: 0
