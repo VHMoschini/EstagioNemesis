@@ -30,8 +30,9 @@ public class AdManager : MonoBehaviour
 	#region Requests
 	private void RequestInterstitial()
 	{
+
 #if UNITY_ANDROID
-		string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+		string adUnitId = Debug.isDebugBuild ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-3940256099942544/1033173712"; //TROCAR SEGUNDO CÓDIGO POR ID DA ADMOB DE ANDROID FUTURAMENTE
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else
