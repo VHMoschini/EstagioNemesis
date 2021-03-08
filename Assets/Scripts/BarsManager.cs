@@ -19,6 +19,7 @@ public class BarsManager : MonoBehaviour
     //turret vars
     public GameObject turret;
     public GameObject player;
+	private PlayerCharacterManager characterManager;
     public List<Transform> turretPlaces = new List<Transform>();
     private bool hasSpawned;
     //barra de vida
@@ -39,11 +40,13 @@ public class BarsManager : MonoBehaviour
 		allyCubeProportion[1] = (3.03f / 100);
 		allyCubeProportion[2] = (3.22f / 100);
 
+		characterManager = PlayerCharacterManager.instance;
+
 	}
     void Update()
     {
-        lifeBarFill.fillAmount = ((player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife*100f)/ player.GetComponent<PlayerCharacterManager>().currentPlayerMaxLife)/100f;
-        textLifeBar.text = player.GetComponent<PlayerCharacterManager>().currentPlayerCurrentLife.ToString();
+        lifeBarFill.fillAmount = ((characterManager.currentPlayerCurrentLife*100f)/ characterManager.currentPlayerMaxLife)/100f;
+        textLifeBar.text = characterManager.currentPlayerCurrentLife.ToString();
         switch (fase)
         {
             case 2:
@@ -114,7 +117,7 @@ public class BarsManager : MonoBehaviour
     }
 
 
-    void CreateTurret()
+    private void CreateTurret()
     {
         for (int i = 0; i < turretPlaces.Count; i++)
         {

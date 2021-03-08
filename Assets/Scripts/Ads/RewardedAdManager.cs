@@ -8,7 +8,7 @@ public class RewardedAdManager : MonoBehaviour
 {
 	public static RewardedAdManager instance;
 	private RewardedAd rewardedAd;
-
+	
 	public bool isLoaded;
 
 	private void Awake()
@@ -88,8 +88,9 @@ public class RewardedAdManager : MonoBehaviour
 	public void HandleRewardedAdClosed(object sender, EventArgs args)
 	{
 		MonoBehaviour.print("HandleRewardedAdClosed event received");
-		this.CreateAndLoadRewardedAd();
 		isLoaded = false;
+		this.CreateAndLoadRewardedAd();
+		
 	}
 
 	public void HandleUserEarnedReward(object sender, Reward args)
@@ -99,6 +100,10 @@ public class RewardedAdManager : MonoBehaviour
 		MonoBehaviour.print(
 			"HandleRewardedAdRewarded event received for "
 						+ amount.ToString() + " " + type);
+
+		PlayerCharacterManager.instance.playerController.characterStats.currentLife = PlayerCharacterManager.instance.playerController.characterStats.maxLife;
+		BulletsManager.instance.ResetBullets();
+		PlayerCharacterManager.instance.Undie();
 	}
 
 

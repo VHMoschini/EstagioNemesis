@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerCharacterManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+	public static PlayerCharacterManager instance;
+
+
     public List<GameObject> players = new List<GameObject>();
     public List<GameObject> projectiles = new List<GameObject>();
     public GameObject defeatPanel;
@@ -23,10 +25,20 @@ public class PlayerCharacterManager : MonoBehaviour
 
 	
 	[HideInInspector] public GameObject playerInst;
-	private PlayerController playerController;
+	[HideInInspector] public PlayerController playerController;
 	private LineRenderer lineRenderer;
 
-
+	private void Awake()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
+		else
+		{
+			Destroy(this);
+		}
+	}
 
 	void Start()
     {
@@ -84,8 +96,17 @@ public class PlayerCharacterManager : MonoBehaviour
 
     }
 
+	public void Undie()
+	{
+		dead = false;
+		defeatPanel.SetActive(false);
+		Time.timeScale = 1;
+	}
+
 	public IEnumerator NoMoreBullets()
 	{
+		if (dead) yield break;
+
 		dead = true;
 		yield return new WaitForSeconds(5);
 		if (barsManager.sawText)

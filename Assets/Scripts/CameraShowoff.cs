@@ -48,7 +48,7 @@ public class CameraShowoff : MonoBehaviour
 			speed = quickSpeed;
 			quickShowoff = true;
 		}
-		if (TD.m_PathPosition > 110f*quickSpeed)
+		if (TD.m_PathPosition > 125f*quickSpeed)
 		{
 			shouldMoveCamera.Value = true;
 			playerMovement.SetupPosition();

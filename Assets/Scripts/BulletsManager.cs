@@ -8,7 +8,7 @@ using TMPro;
 
 public class BulletsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+	public static BulletsManager instance;
 
     public Bullet[] bullets;
     public TMP_Text bulletText;
@@ -16,13 +16,24 @@ public class BulletsManager : MonoBehaviour
     private int index;
     public PlayerCharacterManager playerCharacterManager;
 
-    void Start()
+	private bool coroutineSent;
+
+	private void Awake()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
+		else
+		{
+			Destroy(this);
+		}
+	}
+
+
+	void Start()
     {
-        for (int i = 0; i < bullets.Length; i++)
-        {
-            bullets[i].currentBulletNum = bullets[i].maxBulletNum;
-        }
-		zeroBulletHighlight.color = Color.white;
+		ResetBullets();
     }
 
     private void Update()
@@ -39,11 +50,22 @@ public class BulletsManager : MonoBehaviour
 				emptyBullets++;
 			}
 		}
-		if (emptyBullets == bullets.Length)
+		if (emptyBullets == bullets.Length && !coroutineSent)
 		{
+			coroutineSent = true;
 			playerCharacterManager.StartCoroutine("NoMoreBullets");
 
 		}
+	}
+
+	public void ResetBullets()
+	{
+		for (int i = 0; i < bullets.Length; i++)
+		{
+			bullets[i].currentBulletNum = bullets[i].maxBulletNum;
+		}
+		zeroBulletHighlight.color = Color.white;
+		coroutineSent = false;
 	}
 
 }
