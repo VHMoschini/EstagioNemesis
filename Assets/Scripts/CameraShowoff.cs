@@ -7,6 +7,7 @@ public class CameraShowoff : MonoBehaviour
 {
 	public CinemachineVirtualCamera cam;
 	private CinemachineTrackedDolly TD;
+	private CinemachineBrain brain;
 
 	public BoolVariable shouldMoveCamera;
 	private PlayerCharacterManager characterManager;
@@ -28,6 +29,8 @@ public class CameraShowoff : MonoBehaviour
 		playerMovement = GetComponent<PlayerMovement>();
 		playerMovement.follow = false;
 		quickSpeed = speed * 5;
+		brain = Camera.main.GetComponent<CinemachineBrain>();
+
 		if (quickShowoff) speed = quickSpeed;
 	}
 
@@ -40,21 +43,24 @@ public class CameraShowoff : MonoBehaviour
 		if (TD.m_PathPosition > 3)
 		{
 			cam.m_LookAt = characterManager.playerInst.transform;
-			
+
+			if (TD.m_PathPosition > 4)
+			{
+				cam.Priority = 0;
+				speed = quickSpeed;
+				quickShowoff = true;
+
+				if (brain.ActiveVirtualCamera.VirtualCameraGameObject != cam.gameObject && brain.ActiveBlend == null)
+				{
+					shouldMoveCamera.Value = true;
+					playerMovement.SetupPosition();
+					playerMovement.follow = true;
+					canvas.SetActive(true);
+					this.enabled = false;
+				}
+			}
 		}
-		if (TD.m_PathPosition > 4)
-		{
-			cam.Priority = 0;
-			speed = quickSpeed;
-			quickShowoff = true;
-		}
-		if (TD.m_PathPosition > 125f*quickSpeed)
-		{
-			shouldMoveCamera.Value = true;
-			playerMovement.SetupPosition();
-			playerMovement.follow = true;
-			canvas.SetActive(true);
-			this.enabled = false;
-		}
+		
+		
 	}
 }
