@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SelecaoDeFases : MonoBehaviour
 {
     public AudioSource audioSource;
+    public int selectedPhase;
 
 	private void Awake()
 	{
@@ -25,15 +26,20 @@ public class SelecaoDeFases : MonoBehaviour
 
     }
 
-    public void WaitSoundCaller(int numero)
+    public void SetSelectedPhase(int phaseID)
     {
-        StartCoroutine(WaitSound(numero));
+        selectedPhase = phaseID;
     }
 
-    IEnumerator WaitSound(int numero)
+    public void WaitSoundCaller()
+    {
+        StartCoroutine(WaitSound());
+    }
+
+    IEnumerator WaitSound()
     {
         yield return new WaitForSeconds(audioSource.clip.length);
-        SceneManager.LoadScene(numero);
+        SceneManager.LoadScene(selectedPhase);
 
     }
 

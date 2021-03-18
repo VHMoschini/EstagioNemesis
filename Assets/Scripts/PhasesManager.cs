@@ -19,11 +19,11 @@ public class PhasesManager : MonoBehaviour
 
 	void Update()
     {
-        for (int i = 0; i < phasesButtons.Count; i++)
-		{
-			phasesButtons[i].GetComponent<CheckIfPhaseUnlocked>().isLocked = !(PlayerPrefs.GetInt("LastPhaseUnlocked") > i);
-			buttonImages[i].sprite = (PlayerPrefs.GetInt("LastPhaseUnlocked") > i + 1) ? imageSprites[i] : buttonImages[i].sprite;
-		}
+  //      for (int i = 0; i < phasesButtons.Count; i++)
+		//{
+		//	phasesButtons[i].GetComponent<CheckIfPhaseUnlocked>().isLocked = !(PlayerPrefs.GetInt("LastPhaseUnlocked") > i);
+		//	buttonImages[i].sprite = (PlayerPrefs.GetInt("LastPhaseUnlocked") > i + 1) ? imageSprites[i] : buttonImages[i].sprite;
+		//}
 	}
 
 	public void LiberaTerceiraFase()

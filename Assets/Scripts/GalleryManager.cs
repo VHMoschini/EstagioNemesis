@@ -26,7 +26,6 @@ public class GalleryManager : MonoBehaviour
 
     public void CreateImages()
     {
-        Debug.Log("chamou");
         for (int i = 0; i < images.Length; i++)
         {
             GameObject imageInst = Instantiate(images[i], rectTransform.position, rectTransform.rotation);
