@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c9a8613dab7af1144b10185d8db78445, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: e69497b5d3a463a45a1a2705abcf5085, type: 2}
 --- !u!1 &54171093
 GameObject:
   m_ObjectHideFlags: 0
@@ -8796,6 +8796,11 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -5097167954822386053, guid: 15a2b4fc601a7f04483c210063b9b8a0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: -5065203689814487037, guid: 15a2b4fc601a7f04483c210063b9b8a0,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -9921,6 +9926,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MedioVersao3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 15a2b4fc601a7f04483c210063b9b8a0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 978573126684064259, guid: 15a2b4fc601a7f04483c210063b9b8a0,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10460,6 +10470,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850616858641421170, guid: 15a2b4fc601a7f04483c210063b9b8a0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056747890624954770, guid: 15a2b4fc601a7f04483c210063b9b8a0,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5073600511716759921, guid: 15a2b4fc601a7f04483c210063b9b8a0,
         type: 3}
