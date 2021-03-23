@@ -320,6 +320,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1944695557}
+    - target: {fileID: 7632215859330633066, guid: 18c9caba88bb18641b6b5ce44482ea06,
+        type: 3}
+      propertyPath: selectedPhase
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7632215859330633067, guid: 18c9caba88bb18641b6b5ce44482ea06,
         type: 3}
       propertyPath: m_Name
