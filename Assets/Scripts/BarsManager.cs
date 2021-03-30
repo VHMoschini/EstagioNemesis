@@ -52,10 +52,27 @@ public class BarsManager : MonoBehaviour
         else if (heroSnakeBar.fillAmount >= 0.6 && !sawText)
         {
             StartCoroutine(ShowText());
-            PlayerPrefs.SetInt("LastPhaseUnlocked", fase);
-            PlayerPrefs.SetInt("cards", fase-1);
             goToNextPhaseButton.SetActive(true);
             sawText = true;
+        }
+        //Libera as cartas
+        if (fase == 4 )
+        {
+            PlayerPrefs.SetInt("cards", 1);
+            PlayerPrefs.SetInt("LastPhaseUnlocked", fase);
+
+        }
+        else if(fase == 7 )
+        {
+            PlayerPrefs.SetInt("cards", 2);
+            PlayerPrefs.SetInt("LastPhaseUnlocked", fase);
+
+        }
+        else if (fase == 10)
+        {
+            PlayerPrefs.SetInt("cards", 3);
+            PlayerPrefs.SetInt("LastPhaseUnlocked", fase);
+
         }
 
         if (heroSnakeBar.fillAmount > mercenarySnakeBar.fillAmount)
