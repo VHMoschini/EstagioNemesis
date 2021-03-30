@@ -11,15 +11,15 @@ public class BarsManager : MonoBehaviour
     //barras de heroi/mercenario vars
     [HideInInspector] public int hittedEnemieCubes;
     [HideInInspector] public int hittedAllyCubes;
-	[HideInInspector] public float[] enemyCubeProportion = new float[3];
-	[HideInInspector] public float[] allyCubeProportion = new float[3];
-	[HideInInspector] public int fase;
+    public float enemyCubeProportion;
+    public float allyCubeProportion;
+    [HideInInspector] public int fase;
     public Image heroSnakeBar;
     public Image mercenarySnakeBar;
     //turret vars
     public GameObject turret;
     public GameObject player;
-	private PlayerCharacterManager characterManager;
+    private PlayerCharacterManager characterManager;
     public List<Transform> turretPlaces = new List<Transform>();
     private bool hasSpawned;
     //barra de vida
@@ -32,88 +32,45 @@ public class BarsManager : MonoBehaviour
     {
         fase = SceneManager.GetActiveScene().buildIndex;
 
-		enemyCubeProportion[0] = (0.4975f / 100);
-		enemyCubeProportion[1] = (0.3891f / 100);
-		enemyCubeProportion[2] = (0.4237f / 100);
 
-		allyCubeProportion[0] = (2.56f / 100);
-		allyCubeProportion[1] = (3.03f / 100);
-		allyCubeProportion[2] = (3.22f / 100);
+        characterManager = PlayerCharacterManager.instance;
 
-		characterManager = PlayerCharacterManager.instance;
-
-	}
+    }
     void Update()
     {
-        lifeBarFill.fillAmount = ((characterManager.currentPlayerCurrentLife*100f)/ characterManager.currentPlayerMaxLife)/100f;
+        lifeBarFill.fillAmount = ((characterManager.currentPlayerCurrentLife * 100f) / characterManager.currentPlayerMaxLife) / 100f;
         textLifeBar.text = characterManager.currentPlayerCurrentLife.ToString();
-        switch (fase)
-        {
-            case 2:
-                heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[0];
-                mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[0];
-                if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
-                {
-                    CreateTurret();
-                    hasSpawned = true;
-                }else if(heroSnakeBar.fillAmount >= 0.6 && !sawText)
-                {
-                    StartCoroutine(ShowText());
-                    PlayerPrefs.SetInt("LastPhaseUnlocked", 2);
-                    PlayerPrefs.SetInt("cards", 1);
-                    goToNextPhaseButton.SetActive(true);
-                    sawText = true;
-                }
-                break;
-            case 3:
-				heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[1];
-				mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[1];
-				if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
-                {
-                    CreateTurret();
-                    hasSpawned = true;
-                }
-                else if (heroSnakeBar.fillAmount >= 0.7 && !sawText)
-                {
-                    StartCoroutine(ShowText());
-                    PlayerPrefs.SetInt("LastPhaseUnlocked", 3);
-                    PlayerPrefs.SetInt("cards", 2);
-                    goToNextPhaseButton.SetActive(true);
-                    sawText = true;
+        heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion;
+        mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion;
 
-                }
-                break;
-            case 4:
-				heroSnakeBar.fillAmount = hittedEnemieCubes * enemyCubeProportion[2];
-				mercenarySnakeBar.fillAmount = hittedAllyCubes * allyCubeProportion[2];
-				if (heroSnakeBar.fillAmount > 0.35 && !hasSpawned)
-                {
-                    CreateTurret();
-                    hasSpawned = true;
-                }
-                else if (heroSnakeBar.fillAmount >= 0.7 && !sawText)
-                {
-                    StartCoroutine(ShowText());
-					PlayerPrefs.SetInt("LastPhaseUnlocked", 4);
-					PlayerPrefs.SetInt("cards", 3);
-					sawText = true;
-                }
-                break;
+
+        if (heroSnakeBar.fillAmount > 0.3 && !hasSpawned)
+        {
+            CreateTurret();
+            hasSpawned = true;
+        }
+        else if (heroSnakeBar.fillAmount >= 0.6 && !sawText)
+        {
+            StartCoroutine(ShowText());
+            PlayerPrefs.SetInt("LastPhaseUnlocked", fase);
+            PlayerPrefs.SetInt("cards", fase-1);
+            goToNextPhaseButton.SetActive(true);
+            sawText = true;
         }
 
-		if (heroSnakeBar.fillAmount > mercenarySnakeBar.fillAmount)
-		{
-			heroSnakeBar.transform.SetSiblingIndex(3);
-		}
-		else
-		{
-			mercenarySnakeBar.transform.SetSiblingIndex(3);
-		}
+        if (heroSnakeBar.fillAmount > mercenarySnakeBar.fillAmount)
+        {
+            heroSnakeBar.transform.SetSiblingIndex(3);
+        }
+        else
+        {
+            mercenarySnakeBar.transform.SetSiblingIndex(3);
+        }
 
-		if (hittedEnemieCubes > 0 || hittedAllyCubes > 0)
-		{
-			HominhoWalk.isAfraid = true;
-		}
+        if (hittedEnemieCubes > 0 || hittedAllyCubes > 0)
+        {
+            HominhoWalk.isAfraid = true;
+        }
     }
 
 
@@ -133,7 +90,7 @@ public class BarsManager : MonoBehaviour
 
     IEnumerator ShowText()
     {
-		AdManager.instance.ShowInterstitial();
+        AdManager.instance.ShowInterstitial();
         nextPhaseUnlocked.gameObject.SetActive(true);
         yield return new WaitForSeconds(5f);
         nextPhaseUnlocked.gameObject.SetActive(false);

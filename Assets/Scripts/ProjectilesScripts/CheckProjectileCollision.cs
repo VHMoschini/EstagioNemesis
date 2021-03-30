@@ -15,7 +15,7 @@ public class CheckProjectileCollision : MonoBehaviour
     {
         if (GetComponent<AudioSource>() && !GetComponent<AudioSource>().isPlaying)
         {
-            Debug.Log("tocou");
+            //Debug.Log("tocou");
             GetComponent<AudioSource>().Play();
         }
         if (collision.gameObject.GetComponent<EnemyCube>())
