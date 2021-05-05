@@ -10,7 +10,10 @@ public class TurretScript : MonoBehaviour
     public Transform player;
     public GameObject bullet;
     public GameObject turretHead;
+	public GameObject turretHeadHolder;
     public GameObject muzzle;
+
+	private bool hasHeadHolder;
     //Life vars
     public int currentLife;
     public GameObject warningImage;
@@ -21,7 +24,7 @@ public class TurretScript : MonoBehaviour
     void Start()
     {
         randomTime = Random.Range(2f, 5f);
-
+		if (turretHeadHolder != null) hasHeadHolder = true;
     }
 
 
@@ -41,7 +44,15 @@ public class TurretScript : MonoBehaviour
         if (!resting)
         {
             var q = Quaternion.LookRotation(player.position + Vector3.up*2 - turretHead.transform.position);
-            turretHead.transform.rotation = Quaternion.RotateTowards(turretHead.transform.rotation, q, Time.deltaTime * 50f);
+			if (!hasHeadHolder)
+			{
+				turretHead.transform.rotation = Quaternion.RotateTowards(turretHead.transform.rotation, q, Time.deltaTime * 50f);
+			}
+			else
+			{
+				turretHeadHolder.transform.rotation = Quaternion.RotateTowards(turretHeadHolder.transform.rotation, Quaternion.Euler(turretHeadHolder.transform.rotation.x, q.eulerAngles.y, turretHeadHolder.transform.rotation.z), Time.deltaTime * 50f);
+				turretHead.transform.localRotation = Quaternion.RotateTowards(turretHead.transform.localRotation, Quaternion.Euler(q.eulerAngles.x, turretHead.transform.localRotation.y, turretHead.transform.localRotation.z), Time.deltaTime * 50f);
+			}
         }
         if (canShoot)
         {

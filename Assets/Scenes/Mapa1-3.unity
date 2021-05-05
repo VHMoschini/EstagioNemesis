@@ -16783,12 +16783,12 @@ PrefabInstance:
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000005125064
+      value: -0.000000034367954
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000010083986
+      value: 0.0000000067621775
       objectReference: {fileID: 0}
     - target: {fileID: 1874333599592840158, guid: ff2b5487ef942994bb1164eb3168b71a,
         type: 3}
@@ -19864,6 +19864,12 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 217859982}
+    - target: {fileID: 4096056569072729243, guid: b76853de4c402a744a15996ce8afdcd3,
+        type: 3}
+      propertyPath: skipShowoff
+      value: 
+      objectReference: {fileID: 5772195491438268153, guid: 6b7113fd0277a8045a5afa5affb50794,
+        type: 3}
     - target: {fileID: 5972639141588859917, guid: b76853de4c402a744a15996ce8afdcd3,
         type: 3}
       propertyPath: bulletsManager

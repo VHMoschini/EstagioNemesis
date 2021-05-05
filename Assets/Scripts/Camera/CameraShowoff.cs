@@ -19,6 +19,7 @@ public class CameraShowoff : MonoBehaviour
 	private float quickSpeed;
 
 	public static bool quickShowoff;
+	public GameObject skipShowoff;
 
 
 	private void Start()
@@ -32,6 +33,9 @@ public class CameraShowoff : MonoBehaviour
 		brain = Camera.main.GetComponent<CinemachineBrain>();
 
 		if (quickShowoff) speed = quickSpeed;
+
+		Instantiate(skipShowoff, Camera.main.transform.position + Camera.main.transform.forward * 3, Camera.main.transform.rotation ,Camera.main.transform);
+		SkipShowoff.script = this;
 
 		Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task => {
 			var dependencyStatus = task.Result;
@@ -80,5 +84,11 @@ public class CameraShowoff : MonoBehaviour
 		}
 		
 		
+	}
+
+
+	public void GoQuick()
+	{
+		this.speed = quickSpeed*2;
 	}
 }

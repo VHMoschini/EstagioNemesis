@@ -50,6 +50,5 @@ public class StopAiming : MonoBehaviour
 	{
 		stopaiming.SetActive(false);
 		PlayerController.shouldShoot = true;
-		Debug.Log("foi");
 	}
 }
