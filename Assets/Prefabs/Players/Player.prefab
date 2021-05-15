@@ -169,6 +169,7 @@ MonoBehaviour:
   - {r: 0.60784316, g: 0.41960788, b: 0.121568635, a: 1}
   - {r: 0.5372549, g: 0.050980397, b: 0.050980397, a: 1}
   playerInst: {fileID: 0}
+  playerController: {fileID: 0}
 --- !u!114 &4096056569072729243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +184,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1920524797803883080}
   shouldMoveCamera: {fileID: 11400000, guid: b747e293565940741aad89639972a97b, type: 2}
+  canvas: {fileID: 0}
   speed: 0.01
+  skipShowoff: {fileID: 5772195491438268153, guid: 6b7113fd0277a8045a5afa5affb50794,
+    type: 3}
 --- !u!1 &2436704029826038606
 GameObject:
   m_ObjectHideFlags: 0

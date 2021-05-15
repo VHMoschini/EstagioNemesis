@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "587723430268",
+    "project_id": "cascavel-b4bb6",
+    "firebase_url": "https://cascavel-b4bb6-default-rtdb.firebaseio.com/",
+    "storage_bucket": "cascavel-b4bb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587723430268:android:44914753c6a770ae532cf9",
+        "android_client_info": {
+          "package_name": "com.Nemesis.Cascavel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587723430268-r9d5qhpdn55d9m54sed07337fqd2h3tf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZgHIrZ_E9_xyUyOUvt7QOgkLoMT9Kyfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587723430268-r9d5qhpdn55d9m54sed07337fqd2h3tf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
