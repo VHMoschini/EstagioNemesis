@@ -54,9 +54,10 @@ public class BarsManager : MonoBehaviour
             StartCoroutine(ShowText());
             goToNextPhaseButton.SetActive(true);
             sawText = true;
-        }
-        //Libera as cartas
-        if (fase == 4 )
+			
+		}
+		//Libera as cartas
+		if (fase == 4 )
         {
             PlayerPrefs.SetInt("cards", 1);
             PlayerPrefs.SetInt("LastPhaseUnlocked", fase);

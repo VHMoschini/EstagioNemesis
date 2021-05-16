@@ -31,7 +31,7 @@ public class RewardedAdManager : MonoBehaviour
 	{
 		string adUnitId;
 #if UNITY_ANDROID
-		adUnitId = Debug.isDebugBuild ? "ca-app-pub-3940256099942544/5224354917" : "ca-app-pub-3940256099942544/5224354917";
+		adUnitId = Debug.isDebugBuild ? "ca-app-pub-3940256099942544/5224354917" : "ca-app-pub-4289179132799927/3155528563";
 #elif UNITY_IPHONE
             adUnitId = "ca-app-pub-3940256099942544/1712485313";
 #else

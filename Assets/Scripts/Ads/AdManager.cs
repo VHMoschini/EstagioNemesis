@@ -32,7 +32,7 @@ public class AdManager : MonoBehaviour
 	{
 
 #if UNITY_ANDROID
-		string adUnitId = Debug.isDebugBuild ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-3940256099942544/1033173712"; //TROCAR SEGUNDO CÓDIGO POR ID DA ADMOB DE ANDROID FUTURAMENTE
+		string adUnitId = Debug.isDebugBuild ? "ca-app-pub-3940256099942544/1033173712" : "ca-app-pub-4289179132799927/6842657989"; //TROCAR SEGUNDO CÓDIGO POR ID DA ADMOB DE ANDROID FUTURAMENTE
 #elif UNITY_IPHONE
         string adUnitId = "ca-app-pub-3940256099942544/4411468910";
 #else

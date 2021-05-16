@@ -28,6 +28,7 @@ public class TutorialManager : MonoBehaviour
 	private void Start()
 	{
 		Time.timeScale = 0;
+		Firebase.Analytics.FirebaseAnalytics.LogEvent(Firebase.Analytics.FirebaseAnalytics.EventTutorialBegin);
 	}
 
 	void Update()
@@ -73,5 +74,6 @@ public class TutorialManager : MonoBehaviour
     private void OnDisable()
     {
         Time.timeScale = 1;
-    }
+		Firebase.Analytics.FirebaseAnalytics.LogEvent(Firebase.Analytics.FirebaseAnalytics.EventTutorialComplete);
+	}
 }
